@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>account_name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Validate proposed account name</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+      // Create a new GlideAjax object to call a server-side script include
+    var ga = new GlideAjax('LLoyServiceAccountUtils');
+    // Add a parameter to specify the function to call in the script include
+    ga.addParam('sysparm_name', 'checkServiceAccountName');
+    // Add a parameter to pass the new value of the field to the script include
+    ga.addParam('sysparm_account_name', newValue);
+    ga.getXMLAnswer(function(response) {
+        // Make the asynchronous call to the server and handle the response
+        var result = JSON.parse(response);
+        // Parse the JSON response from the server
+        if (result.exists) {
+            // If the service account name already exists
+            // Display an error message at the top of the form
+            //g_form.addErrorMessage(newValue + ' already exists in the Service Accounts table. Please choose a different name.');
+            g_form.setValue('account_name', ''); // Clear the name field after showing the message
+            // Show an error message next to the 'slt_name' field
+            g_form.showFieldMsg('account_name', newValue + ' already exists in the Service Accounts table. Please choose a different name.', 'error');
+            setTimeout(function() {
+                var nameVar = g_form.getControl('account_name');
+                // Get the control (HTML element) for the 'svc_acc_name' field
+                if (nameVar) {
+                    $(nameVar).focus(); // Use jQuery to set focus
+                    // Set focus to the 'slt_name' field using jQuery
+                }
+            }, 100); // Additional delay to ensure the field is cleared before focusing
+            // Delay the focus action to ensure the field is cleared first
+        } else {
+            g_form.hideFieldMsg('account_name', true);
+            // Hide any field messages for the 'slt_name' field
+            g_form.clearMessages(); // Clear all form messages
+            // Clear all form messages (error, info, warning)
+
+        }
+    });
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-03 09:46:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59824d3493d29250879df0e48aba10ea</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Validate proposed account name</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_script_client_59824d3493d29250879df0e48aba10ea</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-03 09:47:39</sys_updated_on>
+        <table>x_llol_service_acc_records</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

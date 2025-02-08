@@ -1,0 +1,2066 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1198397000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>get_approval_for_permission</internal_name>
+        <label_cache>[{"name":"{{static.366c7f7a1b87bc940666635ee54bcb7b}}","label":"Security Engineering","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"5670a208-4146-4b6f-8c61-b3db5688225f":["approval_conditions"]}},{"name":"6467ffa9-144e-4197-8c5c-a2e23f3b366a.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"18f405c5-46a9-4c9d-a1cb-5c85f309f02b":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.parent_service_account.associated_service.business_contact","label":"Input➛Parent Service Account➛Service➛Business contact","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_service","column_name":"business_contact","usedInstances":{"6467ffa9-144e-4197-8c5c-a2e23f3b366a":["approval_conditions"]}},{"name":"subflow.required_for_data_access","label":"Input➛Required for data access","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","usedInstances":{"97ed01a3-7b1f-4f4f-b95e-e242c3957804":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a5b16867-b230-4bcb-8eef-b4e7eca11854","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.required_approver_user","label":"Input➛Required Approver User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","column_name":"","usedInstances":{"dcd1d8cd-3bf1-4b0b-8cca-0fbedea2656c":["approval_conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ef7b0d47-0dbf-486c-bb62-6f67c3c3412e","uiTypeLabel":"Reference"}},{"name":"subflow.approver_type","label":"Input➛Approver Type","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"User","value":"User","order":1.0},{"label":"Group","value":"Group","order":2.0}],"usedInstances":{"6248c465-3331-40f4-96b6-8f6096717070":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2c006cbb-07c0-4fb2-8516-3a298658b4d1"}},{"name":"dcd1d8cd-3bf1-4b0b-8cca-0fbedea2656c.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"7f94a397-d264-4e54-a1ef-04eef9d58c82":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.requested_item","label":"Input➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","column_name":"","usedInstances":{"dcd1d8cd-3bf1-4b0b-8cca-0fbedea2656c":["record"],"f55c144a-eba3-47e8-9d62-2e6bdc1eb157":["record"],"6467ffa9-144e-4197-8c5c-a2e23f3b366a":["record"],"5670a208-4146-4b6f-8c61-b3db5688225f":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e15c1642-fc73-477e-806f-a891e4adc95e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.parent_service_account.associated_service.owned_by","label":"Input➛Parent Service Account➛Service➛Owned by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_service","column_name":"owned_by","usedInstances":{"dcd1d8cd-3bf1-4b0b-8cca-0fbedea2656c":["approval_conditions"]}},{"name":"5670a208-4146-4b6f-8c61-b3db5688225f.approval_state","label":"6 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"57b4d404-01d5-468c-b270-1ee289238604":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.parent_service_account","label":"Input➛Parent Service Account","reference":"x_llol_service_acc_records","reference_display":"Lloyd\u0027s Service Accounts","type":"reference","base_type":"reference","column_name":"","usedInstances":{"3154c125-b143-47e5-ae11-fe7e88eccaff":["parent_service_account"],"6fd7b96d-1df0-4e1d-8757-dab4d8e4a3f7":["values"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b9c31901-3c61-4d19-aacf-1cb880265ac6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.server_name","label":"Input➛Server Name","reference":"cmdb_ci_win_server","reference_display":"Windows Server","type":"reference","base_type":"reference","column_name":"","usedInstances":{"3154c125-b143-47e5-ae11-fe7e88eccaff":["server_name"],"6fd7b96d-1df0-4e1d-8757-dab4d8e4a3f7":["values"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"14304148-89e4-4a98-84bb-378c04853e80","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.permission_text","label":"Input➛Permission Text","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"3154c125-b143-47e5-ae11-fe7e88eccaff":["permissions"],"6fd7b96d-1df0-4e1d-8757-dab4d8e4a3f7":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"04e1c3f8-dedb-4106-8def-2279381f21cf","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master_snapshot>decd5849c34ed210c7113b1f050131df</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Service Account Admin - Create Permission if approved</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:22:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>188c9c85c34ed210c7113b1f05013133</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Account Admin - Create Permission if approved</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_hub_flow_188c9c85c34ed210c7113b1f05013133</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-14 09:27:54</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=188c9c85c34ed210c7113b1f05013133"/>
+    <sys_variable_value action="delete_multiple" query="document_key=188c9c85c34ed210c7113b1f05013133"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_188c9c85c34ed210c7113b1f05013133^id=188c9c85c34ed210c7113b1f05013133"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=188c9c85c34ed210c7113b1f05013133"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=188c9c85c34ed210c7113b1f05013133^sys_idNOT IN148c9c85c34ed210c7113b1f05013135"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>188c9c85c34ed210c7113b1f05013133</id>
+        <name>Get approval for permission</name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:22:52</sys_created_on>
+        <sys_id>148c9c85c34ed210c7113b1f05013135</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:22:52</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=148c9c85c34ed210c7113b1f05013135"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=188c9c85c34ed210c7113b1f05013133^sys_idNOT IN50ad9049c34ed210c7113b1f05013102,53036805c38ed210c7113b1f05013121,5b036805c38ed210c7113b1f05013103,9b032805c38ed210c7113b1f050131fb,a106a40dc38ed210c7113b1f05013193"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e15c1642-fc73-477e-806f-a891e4adc95e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requested_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Requested Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</model>
+        <model_id>188c9c85c34ed210c7113b1f05013133</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:27:48</sys_created_on>
+        <sys_id>50ad9049c34ed210c7113b1f05013102</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 10:40:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=50ad9049c34ed210c7113b1f05013102"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a5b16867-b230-4bcb-8eef-b4e7eca11854</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>required_for_data_access</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Required for data access</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</model>
+        <model_id>188c9c85c34ed210c7113b1f05013133</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:51:28</sys_created_on>
+        <sys_id>53036805c38ed210c7113b1f05013121</sys_id>
+        <sys_mod_count>33</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=53036805c38ed210c7113b1f05013121"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=04e1c3f8-dedb-4106-8def-2279381f21cf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>permission_text</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Permission Text</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</model>
+        <model_id>188c9c85c34ed210c7113b1f05013133</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:51:28</sys_created_on>
+        <sys_id>5b036805c38ed210c7113b1f05013103</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 10:40:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5b036805c38ed210c7113b1f05013103"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=14304148-89e4-4a98-84bb-378c04853e80</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmdb_ci_win_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Server Name</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</model>
+        <model_id>188c9c85c34ed210c7113b1f05013133</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmdb_ci_win_server">cmdb_ci_win_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:51:28</sys_created_on>
+        <sys_id>9b032805c38ed210c7113b1f050131fb</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 10:40:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9b032805c38ed210c7113b1f050131fb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=b9c31901-3c61-4d19-aacf-1cb880265ac6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_llol_service_acc_records</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>parent_service_account</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Parent Service Account</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</model>
+        <model_id>188c9c85c34ed210c7113b1f05013133</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_llol_service_acc_records">x_llol_service_acc_records</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 16:04:28</sys_created_on>
+        <sys_id>a106a40dc38ed210c7113b1f05013193</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 10:40:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a106a40dc38ed210c7113b1f05013193"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=188c9c85c34ed210c7113b1f05013133^sys_idNOT INe0ad9049c34ed210c7113b1f0501311f"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=72fef2f4-ac25-498c-a43f-3f7cda8df73d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approved</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Approved</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</model>
+        <model_id>188c9c85c34ed210c7113b1f05013133</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_188c9c85c34ed210c7113b1f05013133</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:27:48</sys_created_on>
+        <sys_id>e0ad9049c34ed210c7113b1f0501311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:27:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e0ad9049c34ed210c7113b1f0501311f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=188c9c85c34ed210c7113b1f05013133"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=188c9c85c34ed210c7113b1f05013133"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=188c9c85c34ed210c7113b1f05013133^sys_idNOT IN1108f751935e5650879df0e48aba10dd,1108f751935e5650879df0e48aba10f5,1d08f751935e5650879df0e48aba10f9,9d08f751935e5650879df0e48aba10fe,d1083b51935e5650879df0e48aba1003"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Owned by</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:08</sys_created_on>
+        <sys_id>1108f751935e5650879df0e48aba10dd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:24:51</sys_updated_on>
+        <ui_id>dcd1d8cd-3bf1-4b0b-8cca-0fbedea2656c</ui_id>
+        <values>H4sIAAAAAAAA/+2YTW/bOBCG/4qhs+GVLGdj+xbUCJBi2wJJtpc4EChyFLOgKZekkmq9/u87FKmP2o1rb91DAB85H+Q743lMSQ/rgFDDc3kjtSGSwl2pb1gwDYYhYZNwNKHxCNgwCullFMVplIUXYRRHQwj6Abdxl+NsCJPJMEyjMIzDcHxBw3EMaXz552VMaIhxkiwBIxXQXDFcPxNRWMN6rYs0E/nLQMHXArQBlnADy80GgxjXK0HKzz4WLXTBBVMgg+nDYz9YEYXbGlDBdL3lOlSXICkIDL2thW0LNeXKrllOiyVIk/Da+JfPnHlP72aGHkyycsJ+AN8MSAaoIyNCQz9YEsmIyVUZTI0q0KCAsE9SlE3Egkvj6lySb5r/gwfHQxuXARZGfQ+a5T1JBcxcj5wrmxFD7nB3agrVtCznFLRrC4OMFMK869pcwKeVnQCXYuzGPjsXxVJ+dE0Jmg06P0mhIWGwsrVa9a607G6Rv9zWQq+5rLriyxQ5JaJZEWMUTwtj5awDEFC1eUlWKy6fkpXKn3mVjFKWgyeBi4GdFzxT8yc5cJM7wM6SwTXaZ5X5M1HcFvEBt8HkTT/QpX4niNZtKdjH5GthlbjCfAlJ1QXXAptHFV+ZKzzlGbzmTf9XgUnp3sGk7Rw6HS0vmiYISoXILiC3NUK9G+c/DpcDVNW43HtZWyo9LNUyqXzfs1Kl9T46h0cl2o+Kt7SsuAH7ASrj8I2h4kt786z8NkzCaN9AsnE7gCgdiyciyTiI7v1SO3Zh6XiOw+QAVTUmV/6M3rWX9ZpcD061/BE4Vf4WOMMjwXn9khmH4Vtj53zNHMAP3TupELcD+SUvlNyDT7LguhqrVzHqRByH0wEia5zeO5XbNG2L/z8wxWeYzjDthWl0sXdOO09DDRI0l4zbM3UHKXcngL6FL0CNvpLl3w/tWxDSYuvRoJ7xB07wqSsvpBlgE3LKiX078q5B/iJxlZabzeO/uMmHXTR/40nHIX5A65r3sEKA/lkrPeCNU/mkLuTN1Vvv6EEfnerN7A1yfn7g/NmFuXdQs0k7mKzAziIl3U8Zc3/6PJjOA5lLmAf9eWCjEjuZlRkjsKrGUdnW683GWQpF/AZRZ9lmM1LqKlLTBTAc7Mr6nSWpSPL2U3xEOaAnNbyzAnoz15TdNnloG52uL3zndr7zAdVOf9zz7i19cbJbenRm9xTsokyeNG9SeAXj3+cJgX78D34Y86ibFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Business Contact</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>97ed01a3-7b1f-4f4f-b95e-e242c3957804</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:08</sys_created_on>
+        <sys_id>1108f751935e5650879df0e48aba10f5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:24:52</sys_updated_on>
+        <ui_id>6467ffa9-144e-4197-8c5c-a2e23f3b366a</ui_id>
+        <values>H4sIAAAAAAAA/+2YW2/bNhTHv4qhZ8OT7WSR/RbUCJBhbYEk60scCBR5FLOgKVUk03qev/sOL7rUblx78wYE8CPPhfyf4/MzJT2uI0I1L+StVJpICvcrdcuiacRIFhN6OZyME8JGwzi5mrA8houEZGQYD2nUj7iNu0ryEUwmozgbxvE4jpNLGidjyMZXv16NCY0xTpIlYGQFtKgYrl+IMNawXiuT5aL4OqjgiwGlgaVcw3KzwSDGVSnI6lOIRQtdcMEqkNH08akflaTCbTVU0XS95TpUlyAZCAy9q4VtC9Wr0q5ZQc0SpE55bfw9ZM6Cp3c7Qw8mWTlxP4JvGiQD1JEToaAfLYlkRBfVKprqyqChAsI+SrFqIhZcal/nknxT/E88eDyycTlgYTT0oFk+kEzAzPfIu/IZ0eQed6faVE3LCk5B+bYwyIkR+l3X5gM+lnYCfIq2G4fsQpil/OCbEjUbdH4SoyBlUNparXpfWn6/KL7e1UJvuHRdCWWKghLRrIjWFc+MtnLWEQhwbV6SsuTyOS2r4oW7ZJSyHDwLXAzsvOCZij/LgZ/cAXaWDG7QPnPmT6Titoj3uA0mb/qRWql3gijVloJ9TL8Yq8QXFkpIXRd8C2werXipr/GUFwiaN/1/C0xG9w4mbefQ62h5UTRFUBwiu4Dc1Qj1br3/OFwOUFXj8hBkbakMsLhl6nzfs+LSeh+8I6Ay3I9KsLSs+AH7ASpJ/MZQCaW9eVb+M0zi4b6BZEk7gCgdiycizTmI7v1SO3Zh6XiOw+QAVTUm1+GM3k2Q9ZrcAI5b/ggcl78FzuhIcF6/ZJI4fmvsnK+ZA/iheycVxu1Afi5MJffgky64cmP1KkadiONwOkBkjdNvXuU2Tdvi/wlM4zNMZ5j2wnRxuXdOO09DDRK0kIzbM1UHKX8ngLqDz0C1uparPx7btyCkxdajoHrBHzjFp67CSD3AJhSUE/t2FFyDzCguQSl7isbSNpunv3Cz97uI/g8nHof8Aa1s3suMAPWz1gbgG2cVkrrQN1dxvWMA/+JUb2pvkPvzA+jPLtC9g5pP2sFkBjuLtHQ/bczD6fNoOo9kIWEe9eeRjUrtZDozRmBVjcPZ1uvNxltMRcIGw86yzWZkpVykogtgONjO+p0ldSQF+yk+qhzQkxremYHezDdlt00B2kan7wvfua3vQ4Db6ZcH3r21L092a1+c2T0FuyiTp82bFV7J+Pd5QqCf/gYZOW+/qxQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Security Engineering</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>18f405c5-46a9-4c9d-a1cb-5c85f309f02b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:08</sys_created_on>
+        <sys_id>1d08f751935e5650879df0e48aba10f9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:24:52</sys_updated_on>
+        <ui_id>5670a208-4146-4b6f-8c61-b3db5688225f</ui_id>
+        <values>H4sIAAAAAAAA/+2Y328aORDH/xXkZ8QtLISFt6gop5yurZREfQnRymvPBlfGu11703Ic//vN2t5lCw2FK32IRN48P+zvDPOJMY9rQpkRmbpV2lDF4H6lbzmZEg5JQNmoPwkjygf9IBpPeBrAMKIJ7QfhiHSJqOLGUTqAyWQQJP0gCIMgGrEgCiEJx1fjkLIA4xRdAkYWwLKC4/qFyrIyrNe6TFKZfe0V8KUEbYDHwsBys8EgLnQu6eqTj0ULWwjJC1Bk+vjUJTktcFsDBZmud1zH6pI0AYmhd7WwXaFmlVdrnrFyCcrEojb+7TNn3tO5naEHkyo5QZfANwOKA+pIqdTQJUuqODVZsSJTU5RoKIDyj0qumoiFUMbVuaTftPgHDw4HVVwKWBjzPWiWDzSRMHM9cq50Rg29x92ZKYumZZlgoF1bOKS0lOZd2+YCPubVBLgUU23sszNZLtUH1xTSbND6SEoNMYe8qrVS70pL7xfZ17ta6I1Qtiu+TJkxKpsVNaYQSWkqOWsCEmyblzTPhXqO8yJ7ETYZpSx7zxIXvWpe8EwtnlXPTW4PO0t7N2ifWfMnWoiqiPe4DSZvukSv9DtJtd6Wgn2Mv5SVEleYLyG2XXAtqPJYIXJzjae8gNe86f4qMAk7OJhsO4dOx5YXzWIExSKyD8hdjVDn1vlPw+UIVTUuD17WjkoPi13G1vc9Kzat88E5PCr9w6h4y5YVN2A/QCUK3hgqvrQ3z8pvwyToHxpIHm0HEKVj8VTGqQDZvl9qxz4sLc9pmByhqsbk2p/RufGyXpPrwbHLH4Fj83fAGZwIzuuXTBQEb42dyzVzBD/s4KRCuB3Iz1lZqAP4xAuh7Vi9ilEr4jScjhBZ4/SXU7lL0674/wNTeIHpAtNBmIajg3Pa+jbUIMEyxUV1pm4h5e4E0HfwGZjR12r15yO+ggw1gvXCqys2Tse0n0TjhE2GwRX+hSOA0TBhyTjZbJ7+xYz3+xyea9vT4D2iKc0Lq5Sgf9Ykj27jLHxSG9/mUq139AgPz/XmeoMEX75K/uwqPDio6WQ7mLzEzlLTfnSt5/70OZnOicoUzEl3TqqouJpMa8YIrKpxWNt6vdk4S1lQv0G/tdxmc7rSNlKzBXAcbGv9zhJbkrz9HD+PHNGTGt5ZCZ2Za8p+mzy0jU7XF7F37977ALvTHw+iff+Oznb/Di/snoNdlCni5o2Elyv++zwj0E//Ab2QTJ91FAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>57b4d404-01d5-468c-b270-1ee289238604</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:08</sys_created_on>
+        <sys_id>9d08f751935e5650879df0e48aba10fe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:24:52</sys_updated_on>
+        <ui_id>3154c125-b143-47e5-ae11-fe7e88eccaff</ui_id>
+        <values>H4sIAAAAAAAA/9VVwW7bMAz9lUBnI5DjJE1zK1oEKNC1wzLk0rWGLNGNAFn2JDmNF+TfR1lO6rUptmG79GjykXyPIun7HWHcyVJfa+uY5rBs7LUgc5JP6JSNqeDJDMQopvwsjpMszumExkkM5yQi0uOmMdDJeTzlSZwkI0pHs3GcTRE5EgkDGCNOswIQ6VimIG0/IrJhqvbGbapUqVILZiM5pIzztAJTSGuRk0WgkLZSrFl1+BtVNuJbjXXO7GAZogYXnJe1doPPv0TytVTCgCbz+4eIVMxgZQeGzHevXH+qQ7EMFEK/eiHv6HJNddJ2048d3AZHaYTnQyMCWwdaABLJmbIQkYJpwVxpGjJ3pkaDASbutGqOiLXUDhMSj91a+QPLzqjH5YDKOATf8bMtfBWaGVz5FXNsidm5q00H5+sSG2pDXwTkrFbusm8LgLvKj0wIaaV20aWqC30b2kKOCQ5vh5baQiqg8lo9+05KvlyXz18OTBdSt23pnKrkTB2/mHNGZrXzfHYEFBSYKC1YVUn9lFam3Mg2GLkUwyeFH8Nclc9Y1MonPQyzPsTWsuEC7VetecWM9Co+YRoM3kfENvZSMWtftGAj0++1ZxKUdRrS0AYfwo2s3AUW2EBHdx/983YJoOfvTmWcvUxhu1C2t1k48J5fb7P8jvjVScRuZ+vM92V4GrXfP3oLmHaEX8f0XAjsreub5EdX6nDCEewb74uA7cB+uN9u+Yfi/pd35vcvergzCwlK2BNPfDgyUGDTHKThyV8dms45WHXO7tjE/+vYjCn9aOcmiPvw16b3c3nn7jz8BLfVoMrXBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>a016315c-9e12-463d-97e6-78117e9671db</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:08</sys_created_on>
+        <sys_id>d1083b51935e5650879df0e48aba1003</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:24:52</sys_updated_on>
+        <ui_id>6fd7b96d-1df0-4e1d-8757-dab4d8e4a3f7</ui_id>
+        <values>H4sIAAAAAAAA/9VVTW/bMAz9K4HORmDHaZrkVrQoUKBrh2XopWsNWqIbAbLsSXJaL8h/H2U5qdcPbMN26dHk48d7IunbLQPuZKUvtHWgOa5aeyHYkvG0SCexOFqkcxCTJJ4fL0QR43QOOSTxdMYiJj1ulmB8tEhmPE1SCogn82mSz9I8mYgUEKeE01AiIR3kCrPuI2IbUI03PmVKVSqzaDaSYwacZzWaUlpLPVkCCmlrBe1Nj79UVSu+NVTn2I5WIWp0wnnVaDf6/EskX0slDGq2vL2LWA2GKjs0bLl94fpTHgpyVAT96om8w8u19Zu2y2Hs6Co4KiN8P3HE8MmhFkiNFKAsRqwELcBVpmVLZxoyGARxrVV7QKyldpSQeeyTlT+o7Dz2uAKJGcfgO3x2hc+CmMFVnIGDFWXnrjE9nK8rEtQGXQQW0Ch3OrQFwHXtRyaEdFT76Eo1pb4KsrBDgv3bkaWxmAmsPVfffU+lWK2rxy/7Ts+l7mTpnarioA5f4JyReeN8P1uGCktKlJVQ11I/ZLWpNrILpl7K8YOij3GhqkcqauWDHodZH5O0MD4n+1lnvgEjPYtPlIaCdxGzrT1VYO0zFxIy+974TgKznkMWZPAh3MjanVCBDfbt7qJ/3i6B8eLdqUzy5ynsFsoONosG3vc32Cy/I351UrHd2ib3uozfRu12996CphvhlzEDFwEH6/oq+cGVOZpwAnvhfRG0PbjT6fWaf6zm//LS/P5N95fmXKIS9o1H3p8ZLEk1h1l49BenpneObnpnf26S/3VupnH80Q5OIPfh783g9/LO5bn7CcwjgjfZBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=188c9c85c34ed210c7113b1f05013133"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=188c9c85c34ed210c7113b1f05013133^sys_idNOT IN5d083b51935e5650879df0e48aba1002,9108f751935e5650879df0e48aba10fe,9508f751935e5650879df0e48aba10f9,d108f751935e5650879df0e48aba10e8,d508f751935e5650879df0e48aba10e3"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f063a095938ad210879df0e48aba1075</block>
+        <comment/>
+        <connected_to>97ed01a3-7b1f-4f4f-b95e-e242c3957804</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>7f94a397-d264-4e54-a1ef-04eef9d58c82</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:08</sys_created_on>
+        <sys_id>5d083b51935e5650879df0e48aba1002</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:08</sys_updated_on>
+        <ui_id>a016315c-9e12-463d-97e6-78117e9671db</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7063a095938ad210879df0e48aba106d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>18f405c5-46a9-4c9d-a1cb-5c85f309f02b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:08</sys_created_on>
+        <sys_id>9108f751935e5650879df0e48aba10fe</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:08</sys_updated_on>
+        <ui_id>57b4d404-01d5-468c-b270-1ee289238604</ui_id>
+        <values>H4sIAAAAAAAA/+VUTW/bMAz9K4HPjuGP2EtzK7YVGLCtwFr0shYGLdGJMFnyJDlpFuS/j/JHW6wpVgy97WY9UnyP5JMPge5c2zl7rc+tFWsVrL7fhYFQHqPvQ6CgwWAVMK24cEKrsgfCYAuy84ErZJ0Rbj/7qNZCIRqh1jNoW6O3aCmPC9tK2N+8Mp1thOQGRx0tGGJzaILV4Y+Q27dYSqhQ+qrO16HrgtOpjqFOzljCsrTI0jhOl4ukKrIqSXkGCBnlTRffT23NPvdI+GK/no9wOzFpw72sJA4DvHeoOBJ1DdJiGDSgODht9g+IQeCXSj4CG6EclQt88r0Vv6h2muc+sUbqkeEQZBstGF62XsmAOKjkFNSya9TXQbAfNdbQSTeNmpDOYsmx9eo83chdX2307ttEdCFU38kYlJqBfDiBo36rztFuaAMosaFCZUMLoymUfmuiv0xammgt6RDVUu+I1JspAuaFRzQMiC4I/9DDN2CE7+ILlaHLg8wKrGBlbzwq5wy1cOzHUf7svKChwbGVcpgGJVhmROvOiWeLo+pj+Ny1Twx7OOTFuxjSeDlfJItivqiKer5kRTKvMl7lxXKZpnkdDZ4EWVoHDo/H2y6OMz46lT839luVfYsHcAZ5nSdxfvoBLIpTD+CE9V92ffoX1/v1vdL0cRz/p64XthzcO/bWk/+z6e+8wwcGOxiEIxOWhFx77NP0R/eBPW1asKfQTpsfvoVH7Pgb7VsnHhsGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1eb0ac51938ad210879df0e48aba102c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>97ed01a3-7b1f-4f4f-b95e-e242c3957804</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:08</sys_created_on>
+        <sys_id>9508f751935e5650879df0e48aba10f9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:08</sys_updated_on>
+        <ui_id>18f405c5-46a9-4c9d-a1cb-5c85f309f02b</ui_id>
+        <values>H4sIAAAAAAAA/+VUTW/bMAz9K4XPjuGvuE1uXYcCA7YVWIte1sKgJToRJkueJCfNgvz3Uf5oizXFiqG33axHio+PfPI+0J1rO2dv9Lm1YqWC5ff7MBDKY/S9DxQ0GCwDphUXTmhV9kAYbEB2PvChs0KhtScXWjlg7gTa1ugNWsrhwrYSdrdvSGVrIbnBkb8FQywOTbDc/xFyuxZLCRVKqnjtjFArui44neoY6mTBEpalRZbGcXqWJ1WRVUnKM0DIKG+6eDHJOfncI+GrOj0f4XZi0ob7tpI4DPDBoeJI1DVIi2HQgOLgtNk9IgaBXyn5BKyFclQu8MkPVvyi2ul87hNrJI0MhyBba8HwqvWdDIiDSk5BLbtGfR0a9mPGGjrppjET0lksOba+O083ctfXa739NhFdCtUrGYNSM5CPJ3Ckt+oc7YY2gBIbKlQ2tDCaQum3JvrL1EsTrSQdolrqLZF6E0W0XGo8omFAdEn4xx6+BSO8ii9Uhi4PbVZgBSt7w1E5Z0jCoR9H+bPzDQ0CRynlMA1KsMyI1p0TzwbHrg/hS7c+M+p+X+TFaV3DYpbkOc7yZHE6O2NzNoMU06zOqqwoIBo8CbK0DhweDnddHGd8dCp/aer3KvseD2AB83qexPPjDyAvjj2AI9Z/3fXpX1zv1/dG08dx/J+6XthycO+orSf/Z9Pfe4cPDHYwCEcmLDVy47FP05/cB3a0acGeQ1ttfngJT9jhN4rrkrcTBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">92b0ac51938ad210879df0e48aba1012</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>7f94a397-d264-4e54-a1ef-04eef9d58c82</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:08</sys_created_on>
+        <sys_id>d108f751935e5650879df0e48aba10e8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:08</sys_updated_on>
+        <ui_id>97ed01a3-7b1f-4f4f-b95e-e242c3957804</ui_id>
+        <values>H4sIAAAAAAAA/+VUTWsbMRD9K2bPi9mP2DS+hZRAoW2gCbm0QcxKs7aoVtpIWjuu8X/vzH4koUloWnrrbfVmNO+90WMPieti28Vw7c5C0GubrL7epom2jNH3IbHQYLJKpLNKR+2s6IE02YLpuABSYgiz6GYKIsx0mHm867RHRU1Kh9bA/uYtvXKjjfI4KmjBE09En6wOv5TivkVhoEJDI6+i13ZN17WiU51BnZ/KXJbFsiyyrHh3klfLssoLVQJCSX3TxfPJ0Oxjj6SvOmU+wsPE5LxiWXmWJngf0SqSv6rBBEyTBixZc37/gHgEdWnNI7DRNtK4hJvvg/5Bs4vFghtrJI8Sh6LcOC3xsmUlAxKhMlPRma6xnwfBvGesoTNx2jMhXUChsGV1TDdy11cbt/syEV1o2zsZi8ZJMA8niOS36iIGfgE02NAg0UDb0hZE691W95dJSzNfGzrMa+N2RMoxmoNk4XN+5/kF4e97+Aa8ZhefaAxdHmRWELQUfeRoXPRk4divQ9x1LGgwOFoRwzaoIUiv23hGPFscVR/T53l9EtXDIXQVi5xPsRO184I1iiGax+O3LstK1Yt4Ft8/vv8vIn0Ki3qRZ4uXI32yfCnSL4T59RwXv8kxe3ljjLMs+09zrIMY8jh668n/Osa3nNmBIQwBUSh1ICHXjH2Y/s5c2NNLa/kU2jn/nS08Ysef8drOFecFAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">60ad9049c34ed210c7113b1f05013150</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:08</sys_created_on>
+        <sys_id>d508f751935e5650879df0e48aba10e3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:08</sys_updated_on>
+        <ui_id>7f94a397-d264-4e54-a1ef-04eef9d58c82</ui_id>
+        <values>H4sIAAAAAAAA/+VUTW/bMAz9K4HPiSHbcZDmVmwoMGBbgLXoZSsMWqITYbLkSXLSLMh/H+WPtmjTbRh62816pPgeyScfI9P6pvXuxlw6Jzc6Wn29m0ZSB4y+j5GGGqNVxI0W0kujiw6YRjtQbQis9xrFpDxMoGms2aGjmJCuUXC4/U0K30olLA58DViq6tFGq+OzkD80WCgoUVGla2+l3tB1KehUMaiSC57wLF1kKWPpcp6Ui6xMUpEBQkZ548V3o/zJxw6ZvtpX4CPcjUzGiiArYdMI7z1qgURdgXI4jWrQAryxhwfEIoi1Vo/AVmpP5aKQfO/kT6qd5nlIrJB65NgH+dZIjusmKOkRD6Uag0a1tf7cCw7jxQpa5cfxEtI6LAQ2QV2gG7ir663ZfxmJrqTuOhmCynBQDyfw1G/ZetoNbQAV1lSoqGlhNIUibE12l0lLHW8UHeJKmT2RBtPEwIPwmIYB8RXh7zv4FqwMXXyiMnS5l1mCk7zoDEblvKUWTt04ih9tENQ3OLRS9NOgBMetbPwl8exwUH2avnTnE2Mej4KLRCy5mGVllczmJStnS85hxqoSBUK6yBc87j0JqnAePJ5O31rGMjE4Vbw081uVfYsHcAF5lScsP/8A5otzD+CM9V93ffoH14f1/aXpGWP/qeulK3r3Dr115P9s+rvg8J7B9QYRyKUjITcB+zD+uUPgQJuW/Cm0N/Z7aOERO/0C4OHf+gMGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=188c9c85c34ed210c7113b1f05013133"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=188c9c85c34ed210c7113b1f05013133"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133^sys_idNOT IN17036805c38ed210c7113b1f0501311f,1f036805c38ed210c7113b1f05013101,64ad9049c34ed210c7113b1f05013108,b906a40dc38ed210c7113b1f05013198,df036805c38ed210c7113b1f05013126"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>permission_text</element>
+        <help/>
+        <hint/>
+        <label>Permission Text</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:51:28</sys_created_on>
+        <sys_id>17036805c38ed210c7113b1f0501311f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Permission Text</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133_permission_text_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:51:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_name</element>
+        <help/>
+        <hint/>
+        <label>Server Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:51:28</sys_created_on>
+        <sys_id>1f036805c38ed210c7113b1f05013101</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Server Name</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133_server_name_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:51:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requested_item</element>
+        <help/>
+        <hint/>
+        <label>Requested Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:27:48</sys_created_on>
+        <sys_id>64ad9049c34ed210c7113b1f05013108</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requested Item</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133_requested_item_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:27:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>parent_service_account</element>
+        <help/>
+        <hint/>
+        <label>Parent Service Account</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 16:04:28</sys_created_on>
+        <sys_id>b906a40dc38ed210c7113b1f05013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Parent Service Account</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133_parent_service_account_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 16:04:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>required_for_data_access</element>
+        <help/>
+        <hint/>
+        <label>Required for data access</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:51:29</sys_created_on>
+        <sys_id>df036805c38ed210c7113b1f05013126</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Required for data access</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133_required_for_data_access_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:51:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133^sys_idNOT IN17036805c38ed210c7113b1f050131a0,93036805c38ed210c7113b1f0501319f,db036805c38ed210c7113b1f0501319f"/>
+    <sys_choice field="approver_type" table="var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>approver_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Group</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-21 15:51:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>17036805c38ed210c7113b1f050131a0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-21 15:51:29</sys_updated_on>
+            <value>Group</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>approver_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-21 15:51:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>93036805c38ed210c7113b1f0501319f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-21 15:54:03</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>approver_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>User</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_188c9c85c34ed210c7113b1f05013133</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-21 15:51:29</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db036805c38ed210c7113b1f0501319f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-21 15:51:29</sys_updated_on>
+            <value>User</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_188c9c85c34ed210c7113b1f05013133^sys_idNOT IN20ad9049c34ed210c7113b1f05013123"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>approved</element>
+        <help/>
+        <hint/>
+        <label>Approved</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_188c9c85c34ed210c7113b1f05013133</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:27:48</sys_created_on>
+        <sys_id>20ad9049c34ed210c7113b1f05013123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approved</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_188c9c85c34ed210c7113b1f05013133_approved_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:27:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_188c9c85c34ed210c7113b1f05013133"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="">{}</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>get_approval_for_permission</internal_name>
+        <label_cache>[{"name":"{{static.366c7f7a1b87bc940666635ee54bcb7b}}","label":"Security Engineering","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","usedInstances":{"5670a208-4146-4b6f-8c61-b3db5688225f":["approval_conditions"]}},{"name":"6467ffa9-144e-4197-8c5c-a2e23f3b366a.approval_state","label":"4 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"18f405c5-46a9-4c9d-a1cb-5c85f309f02b":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.parent_service_account.associated_service.business_contact","label":"Input➛Parent Service Account➛Service➛Business contact","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_service","column_name":"business_contact","usedInstances":{"6467ffa9-144e-4197-8c5c-a2e23f3b366a":["approval_conditions"]}},{"name":"subflow.required_for_data_access","label":"Input➛Required for data access","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","usedInstances":{"97ed01a3-7b1f-4f4f-b95e-e242c3957804":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a5b16867-b230-4bcb-8eef-b4e7eca11854","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.required_approver_user","label":"Input➛Required Approver User","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","column_name":"","usedInstances":{"dcd1d8cd-3bf1-4b0b-8cca-0fbedea2656c":["approval_conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"ef7b0d47-0dbf-486c-bb62-6f67c3c3412e","uiTypeLabel":"Reference"}},{"name":"subflow.approver_type","label":"Input➛Approver Type","reference":"","reference_display":"","type":"choice","base_type":"choice","column_name":"","choices":[{"label":"User","value":"User","order":1.0},{"label":"Group","value":"Group","order":2.0}],"usedInstances":{"6248c465-3331-40f4-96b6-8f6096717070":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2c006cbb-07c0-4fb2-8516-3a298658b4d1"}},{"name":"dcd1d8cd-3bf1-4b0b-8cca-0fbedea2656c.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"7f94a397-d264-4e54-a1ef-04eef9d58c82":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.requested_item","label":"Input➛Requested Item","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","column_name":"","usedInstances":{"dcd1d8cd-3bf1-4b0b-8cca-0fbedea2656c":["record"],"f55c144a-eba3-47e8-9d62-2e6bdc1eb157":["record"],"6467ffa9-144e-4197-8c5c-a2e23f3b366a":["record"],"5670a208-4146-4b6f-8c61-b3db5688225f":["record"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"e15c1642-fc73-477e-806f-a891e4adc95e","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.parent_service_account.associated_service.owned_by","label":"Input➛Parent Service Account➛Service➛Owned by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"cmdb_ci_service","column_name":"owned_by","usedInstances":{"dcd1d8cd-3bf1-4b0b-8cca-0fbedea2656c":["approval_conditions"]}},{"name":"5670a208-4146-4b6f-8c61-b3db5688225f.approval_state","label":"6 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"57b4d404-01d5-468c-b270-1ee289238604":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.parent_service_account","label":"Input➛Parent Service Account","reference":"x_llol_service_acc_records","reference_display":"Lloyd\u0027s Service Accounts","type":"reference","base_type":"reference","column_name":"","usedInstances":{"3154c125-b143-47e5-ae11-fe7e88eccaff":["parent_service_account"],"6fd7b96d-1df0-4e1d-8757-dab4d8e4a3f7":["values"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b9c31901-3c61-4d19-aacf-1cb880265ac6","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.server_name","label":"Input➛Server Name","reference":"cmdb_ci_win_server","reference_display":"Windows Server","type":"reference","base_type":"reference","column_name":"","usedInstances":{"3154c125-b143-47e5-ae11-fe7e88eccaff":["server_name"],"6fd7b96d-1df0-4e1d-8757-dab4d8e4a3f7":["values"]},"attributes":{"uiType":"reference","uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"14304148-89e4-4a98-84bb-378c04853e80","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"subflow.permission_text","label":"Input➛Permission Text","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"3154c125-b143-47e5-ae11-fe7e88eccaff":["permissions"],"6fd7b96d-1df0-4e1d-8757-dab4d8e4a3f7":["values"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"04e1c3f8-dedb-4106-8def-2279381f21cf","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
+        <master>true</master>
+        <name>Service Account Admin - Create Permission if approved</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:28:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>decd5849c34ed210c7113b1f050131df</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=decd5849c34ed210c7113b1f050131df"/>
+    <sys_variable_value action="delete_multiple" query="document_key=decd5849c34ed210c7113b1f050131df"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_decd5849c34ed210c7113b1f050131df^id=decd5849c34ed210c7113b1f050131df"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=decd5849c34ed210c7113b1f050131df"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=decd5849c34ed210c7113b1f050131df^sys_idNOT INd2cd5849c34ed210c7113b1f050131ee"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>decd5849c34ed210c7113b1f050131df</id>
+        <name>Get approval for permission</name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:28:28</sys_created_on>
+        <sys_id>d2cd5849c34ed210c7113b1f050131ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:28:28</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d2cd5849c34ed210c7113b1f050131ee"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=decd5849c34ed210c7113b1f050131df^sys_idNOT IN5acd5849c34ed210c7113b1f050131ef,a1a3a0c5c38ed210c7113b1f050131ad,d206e40dc38ed210c7113b1f050131b5,e1a3a0c5c38ed210c7113b1f050131f5,eda3a0c5c38ed210c7113b1f050131eb"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=e15c1642-fc73-477e-806f-a891e4adc95e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sc_req_item</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>requested_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Requested Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</model>
+        <model_id>decd5849c34ed210c7113b1f050131df</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:28:28</sys_created_on>
+        <sys_id>5acd5849c34ed210c7113b1f050131ef</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 10:40:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5acd5849c34ed210c7113b1f050131ef"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=14304148-89e4-4a98-84bb-378c04853e80</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmdb_ci_win_server</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Server Name</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</model>
+        <model_id>decd5849c34ed210c7113b1f050131df</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmdb_ci_win_server">cmdb_ci_win_server</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:54:05</sys_created_on>
+        <sys_id>a1a3a0c5c38ed210c7113b1f050131ad</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 10:40:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a1a3a0c5c38ed210c7113b1f050131ad"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=b9c31901-3c61-4d19-aacf-1cb880265ac6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>x_llol_service_acc_records</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>parent_service_account</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Parent Service Account</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</model>
+        <model_id>decd5849c34ed210c7113b1f050131df</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_llol_service_acc_records">x_llol_service_acc_records</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 16:04:31</sys_created_on>
+        <sys_id>d206e40dc38ed210c7113b1f050131b5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 10:40:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d206e40dc38ed210c7113b1f050131b5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a5b16867-b230-4bcb-8eef-b4e7eca11854</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>required_for_data_access</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Required for data access</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</model>
+        <model_id>decd5849c34ed210c7113b1f050131df</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+        <next_element/>
+        <order>5</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:54:05</sys_created_on>
+        <sys_id>e1a3a0c5c38ed210c7113b1f050131f5</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e1a3a0c5c38ed210c7113b1f050131f5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=04e1c3f8-dedb-4106-8def-2279381f21cf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>permission_text</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Permission Text</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</model>
+        <model_id>decd5849c34ed210c7113b1f050131df</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:54:05</sys_created_on>
+        <sys_id>eda3a0c5c38ed210c7113b1f050131eb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 10:40:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=eda3a0c5c38ed210c7113b1f050131eb"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=decd5849c34ed210c7113b1f050131df^sys_idNOT IN9ecd9849c34ed210c7113b1f0501313c"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=72fef2f4-ac25-498c-a43f-3f7cda8df73d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approved</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Approved</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</model>
+        <model_id>decd5849c34ed210c7113b1f050131df</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_decd5849c34ed210c7113b1f050131df</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:28:29</sys_created_on>
+        <sys_id>9ecd9849c34ed210c7113b1f0501313c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:28:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9ecd9849c34ed210c7113b1f0501313c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=decd5849c34ed210c7113b1f050131df"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=decd5849c34ed210c7113b1f050131df"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=decd5849c34ed210c7113b1f050131df^sys_idNOT IN02087b51935e5650879df0e48aba103d,02087b51935e5650879df0e48aba105d,46087b51935e5650879df0e48aba1061,82087b51935e5650879df0e48aba1053,8e087b51935e5650879df0e48aba1057"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Owned by</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:11</sys_created_on>
+        <sys_id>02087b51935e5650879df0e48aba103d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <ui_id>dcd1d8cd-3bf1-4b0b-8cca-0fbedea2656c</ui_id>
+        <values>H4sIAAAAAAAA/+2YTW/bOBCG/4qhs+GVLGdj+xbUCJBi2wJJtpc4EChyFLOgKZekkmq9/u87FKmP2o1rb91DAB85H+Q743lMSQ/rgFDDc3kjtSGSwl2pb1gwDYYhYZNwNKHxCNgwCullFMVplIUXYRRHQwj6Abdxl+NsCJPJMEyjMIzDcHxBw3EMaXz552VMaIhxkiwBIxXQXDFcPxNRWMN6rYs0E/nLQMHXArQBlnADy80GgxjXK0HKzz4WLXTBBVMgg+nDYz9YEYXbGlDBdL3lOlSXICkIDL2thW0LNeXKrllOiyVIk/Da+JfPnHlP72aGHkyycsJ+AN8MSAaoIyNCQz9YEsmIyVUZTI0q0KCAsE9SlE3Egkvj6lySb5r/gwfHQxuXARZGfQ+a5T1JBcxcj5wrmxFD7nB3agrVtCznFLRrC4OMFMK869pcwKeVnQCXYuzGPjsXxVJ+dE0Jmg06P0mhIWGwsrVa9a607G6Rv9zWQq+5rLriyxQ5JaJZEWMUTwtj5awDEFC1eUlWKy6fkpXKn3mVjFKWgyeBi4GdFzxT8yc5cJM7wM6SwTXaZ5X5M1HcFvEBt8HkTT/QpX4niNZtKdjH5GthlbjCfAlJ1QXXAptHFV+ZKzzlGbzmTf9XgUnp3sGk7Rw6HS0vmiYISoXILiC3NUK9G+c/DpcDVNW43HtZWyo9LNUyqXzfs1Kl9T46h0cl2o+Kt7SsuAH7ASrj8I2h4kt786z8NkzCaN9AsnE7gCgdiyciyTiI7v1SO3Zh6XiOw+QAVTUmV/6M3rWX9ZpcD061/BE4Vf4WOMMjwXn9khmH4Vtj53zNHMAP3TupELcD+SUvlNyDT7LguhqrVzHqRByH0wEia5zeO5XbNG2L/z8wxWeYzjDthWl0sXdOO09DDRI0l4zbM3UHKXcngL6FL0CNvpLl3w/tWxDSYuvRoJ7xB07wqSsvpBlgE3LKiX078q5B/iJxlZabzeO/uMmHXTR/40nHIX5A65r3sEKA/lkrPeCNU/mkLuTN1Vvv6EEfnerN7A1yfn7g/NmFuXdQs0k7mKzAziIl3U8Zc3/6PJjOA5lLmAf9eWCjEjuZlRkjsKrGUdnW683GWQpF/AZRZ9lmM1LqKlLTBTAc7Mr6nSWpSPL2U3xEOaAnNbyzAnoz15TdNnloG52uL3zndr7zAdVOf9zz7i19cbJbenRm9xTsokyeNG9SeAXj3+cJgX78D34Y86ibFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>57b4d404-01d5-468c-b270-1ee289238604</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:11</sys_created_on>
+        <sys_id>02087b51935e5650879df0e48aba105d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <ui_id>3154c125-b143-47e5-ae11-fe7e88eccaff</ui_id>
+        <values>H4sIAAAAAAAA/9VVwW7bMAz9lUBnI5DjJE1zK1oEKNC1wzLk0rWGLNGNAFn2JDmNF+TfR1lO6rUptmG79GjykXyPIun7HWHcyVJfa+uY5rBs7LUgc5JP6JSNqeDJDMQopvwsjpMszumExkkM5yQi0uOmMdDJeTzlSZwkI0pHs3GcTRE5EgkDGCNOswIQ6VimIG0/IrJhqvbGbapUqVILZiM5pIzztAJTSGuRk0WgkLZSrFl1+BtVNuJbjXXO7GAZogYXnJe1doPPv0TytVTCgCbz+4eIVMxgZQeGzHevXH+qQ7EMFEK/eiHv6HJNddJ2048d3AZHaYTnQyMCWwdaABLJmbIQkYJpwVxpGjJ3pkaDASbutGqOiLXUDhMSj91a+QPLzqjH5YDKOATf8bMtfBWaGVz5FXNsidm5q00H5+sSG2pDXwTkrFbusm8LgLvKj0wIaaV20aWqC30b2kKOCQ5vh5baQiqg8lo9+05KvlyXz18OTBdSt23pnKrkTB2/mHNGZrXzfHYEFBSYKC1YVUn9lFam3Mg2GLkUwyeFH8Nclc9Y1MonPQyzPsTWsuEC7VetecWM9Co+YRoM3kfENvZSMWtftGAj0++1ZxKUdRrS0AYfwo2s3AUW2EBHdx/983YJoOfvTmWcvUxhu1C2t1k48J5fb7P8jvjVScRuZ+vM92V4GrXfP3oLmHaEX8f0XAjsreub5EdX6nDCEewb74uA7cB+uN9u+Yfi/pd35vcvergzCwlK2BNPfDgyUGDTHKThyV8dms45WHXO7tjE/+vYjCn9aOcmiPvw16b3c3nn7jz8BLfVoMrXBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>a016315c-9e12-463d-97e6-78117e9671db</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:11</sys_created_on>
+        <sys_id>46087b51935e5650879df0e48aba1061</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <ui_id>6fd7b96d-1df0-4e1d-8757-dab4d8e4a3f7</ui_id>
+        <values>H4sIAAAAAAAA/9VVTW/bMAz9K4HORmDHaZrkVrQoUKBrh2XopWsNWqIbAbLsSXJaL8h/H2U5qdcPbMN26dHk48d7IunbLQPuZKUvtHWgOa5aeyHYkvG0SCexOFqkcxCTJJ4fL0QR43QOOSTxdMYiJj1ulmB8tEhmPE1SCogn82mSz9I8mYgUEKeE01AiIR3kCrPuI2IbUI03PmVKVSqzaDaSYwacZzWaUlpLPVkCCmlrBe1Nj79UVSu+NVTn2I5WIWp0wnnVaDf6/EskX0slDGq2vL2LWA2GKjs0bLl94fpTHgpyVAT96om8w8u19Zu2y2Hs6Co4KiN8P3HE8MmhFkiNFKAsRqwELcBVpmVLZxoyGARxrVV7QKyldpSQeeyTlT+o7Dz2uAKJGcfgO3x2hc+CmMFVnIGDFWXnrjE9nK8rEtQGXQQW0Ch3OrQFwHXtRyaEdFT76Eo1pb4KsrBDgv3bkaWxmAmsPVfffU+lWK2rxy/7Ts+l7mTpnarioA5f4JyReeN8P1uGCktKlJVQ11I/ZLWpNrILpl7K8YOij3GhqkcqauWDHodZH5O0MD4n+1lnvgEjPYtPlIaCdxGzrT1VYO0zFxIy+974TgKznkMWZPAh3MjanVCBDfbt7qJ/3i6B8eLdqUzy5ynsFsoONosG3vc32Cy/I351UrHd2ib3uozfRu12996CphvhlzEDFwEH6/oq+cGVOZpwAnvhfRG0PbjT6fWaf6zm//LS/P5N95fmXKIS9o1H3p8ZLEk1h1l49BenpneObnpnf26S/3VupnH80Q5OIPfh783g9/LO5bn7CcwjgjfZBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Business Contact</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>97ed01a3-7b1f-4f4f-b95e-e242c3957804</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:11</sys_created_on>
+        <sys_id>82087b51935e5650879df0e48aba1053</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <ui_id>6467ffa9-144e-4197-8c5c-a2e23f3b366a</ui_id>
+        <values>H4sIAAAAAAAA/+2YW2/bNhTHv4qhZ8OT7WSR/RbUCJBhbYEk60scCBR5FLOgKVUk03qev/sOL7rUblx78wYE8CPPhfyf4/MzJT2uI0I1L+StVJpICvcrdcuiacRIFhN6OZyME8JGwzi5mrA8houEZGQYD2nUj7iNu0ryEUwmozgbxvE4jpNLGidjyMZXv16NCY0xTpIlYGQFtKgYrl+IMNawXiuT5aL4OqjgiwGlgaVcw3KzwSDGVSnI6lOIRQtdcMEqkNH08akflaTCbTVU0XS95TpUlyAZCAy9q4VtC9Wr0q5ZQc0SpE55bfw9ZM6Cp3c7Qw8mWTlxP4JvGiQD1JEToaAfLYlkRBfVKprqyqChAsI+SrFqIhZcal/nknxT/E88eDyycTlgYTT0oFk+kEzAzPfIu/IZ0eQed6faVE3LCk5B+bYwyIkR+l3X5gM+lnYCfIq2G4fsQpil/OCbEjUbdH4SoyBlUNparXpfWn6/KL7e1UJvuHRdCWWKghLRrIjWFc+MtnLWEQhwbV6SsuTyOS2r4oW7ZJSyHDwLXAzsvOCZij/LgZ/cAXaWDG7QPnPmT6Titoj3uA0mb/qRWql3gijVloJ9TL8Yq8QXFkpIXRd8C2werXipr/GUFwiaN/1/C0xG9w4mbefQ62h5UTRFUBwiu4Dc1Qj1br3/OFwOUFXj8hBkbakMsLhl6nzfs+LSeh+8I6Ay3I9KsLSs+AH7ASpJ/MZQCaW9eVb+M0zi4b6BZEk7gCgdiycizTmI7v1SO3Zh6XiOw+QAVTUm1+GM3k2Q9ZrcAI5b/ggcl78FzuhIcF6/ZJI4fmvsnK+ZA/iheycVxu1Afi5MJffgky64cmP1KkadiONwOkBkjdNvXuU2Tdvi/wlM4zNMZ5j2wnRxuXdOO09DDRK0kIzbM1UHKX8ngLqDz0C1uparPx7btyCkxdajoHrBHzjFp67CSD3AJhSUE/t2FFyDzCguQSl7isbSNpunv3Cz97uI/g8nHof8Aa1s3suMAPWz1gbgG2cVkrrQN1dxvWMA/+JUb2pvkPvzA+jPLtC9g5pP2sFkBjuLtHQ/bczD6fNoOo9kIWEe9eeRjUrtZDozRmBVjcPZ1uvNxltMRcIGw86yzWZkpVykogtgONjO+p0ldSQF+yk+qhzQkxremYHezDdlt00B2kan7wvfua3vQ4Db6ZcH3r21L092a1+c2T0FuyiTp82bFV7J+Pd5QqCf/gYZOW+/qxQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Security Engineering</comment>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>18f405c5-46a9-4c9d-a1cb-5c85f309f02b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:11</sys_created_on>
+        <sys_id>8e087b51935e5650879df0e48aba1057</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <ui_id>5670a208-4146-4b6f-8c61-b3db5688225f</ui_id>
+        <values>H4sIAAAAAAAA/+2Y328aORDH/xXkZ8QtLISFt6gop5yurZREfQnRymvPBlfGu11703Ic//vN2t5lCw2FK32IRN48P+zvDPOJMY9rQpkRmbpV2lDF4H6lbzmZEg5JQNmoPwkjygf9IBpPeBrAMKIJ7QfhiHSJqOLGUTqAyWQQJP0gCIMgGrEgCiEJx1fjkLIA4xRdAkYWwLKC4/qFyrIyrNe6TFKZfe0V8KUEbYDHwsBys8EgLnQu6eqTj0ULWwjJC1Bk+vjUJTktcFsDBZmud1zH6pI0AYmhd7WwXaFmlVdrnrFyCcrEojb+7TNn3tO5naEHkyo5QZfANwOKA+pIqdTQJUuqODVZsSJTU5RoKIDyj0qumoiFUMbVuaTftPgHDw4HVVwKWBjzPWiWDzSRMHM9cq50Rg29x92ZKYumZZlgoF1bOKS0lOZd2+YCPubVBLgUU23sszNZLtUH1xTSbND6SEoNMYe8qrVS70pL7xfZ17ta6I1Qtiu+TJkxKpsVNaYQSWkqOWsCEmyblzTPhXqO8yJ7ETYZpSx7zxIXvWpe8EwtnlXPTW4PO0t7N2ifWfMnWoiqiPe4DSZvukSv9DtJtd6Wgn2Mv5SVEleYLyG2XXAtqPJYIXJzjae8gNe86f4qMAk7OJhsO4dOx5YXzWIExSKyD8hdjVDn1vlPw+UIVTUuD17WjkoPi13G1vc9Kzat88E5PCr9w6h4y5YVN2A/QCUK3hgqvrQ3z8pvwyToHxpIHm0HEKVj8VTGqQDZvl9qxz4sLc9pmByhqsbk2p/RufGyXpPrwbHLH4Fj83fAGZwIzuuXTBQEb42dyzVzBD/s4KRCuB3Iz1lZqAP4xAuh7Vi9ilEr4jScjhBZ4/SXU7lL0674/wNTeIHpAtNBmIajg3Pa+jbUIMEyxUV1pm4h5e4E0HfwGZjR12r15yO+ggw1gvXCqys2Tse0n0TjhE2GwRX+hSOA0TBhyTjZbJ7+xYz3+xyea9vT4D2iKc0Lq5Sgf9Ykj27jLHxSG9/mUq139AgPz/XmeoMEX75K/uwqPDio6WQ7mLzEzlLTfnSt5/70OZnOicoUzEl3TqqouJpMa8YIrKpxWNt6vdk4S1lQv0G/tdxmc7rSNlKzBXAcbGv9zhJbkrz9HD+PHNGTGt5ZCZ2Za8p+mzy0jU7XF7F37977ALvTHw+iff+Oznb/Di/snoNdlCni5o2Elyv++zwj0E//Ab2QTJ91FAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=decd5849c34ed210c7113b1f050131df"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=decd5849c34ed210c7113b1f050131df^sys_idNOT IN06087b51935e5650879df0e48aba105c,0a087b51935e5650879df0e48aba1057,0e087b51935e5650879df0e48aba1052,ce087b51935e5650879df0e48aba1041,ce087b51935e5650879df0e48aba1060"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7063a095938ad210879df0e48aba106d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>18f405c5-46a9-4c9d-a1cb-5c85f309f02b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:11</sys_created_on>
+        <sys_id>06087b51935e5650879df0e48aba105c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <ui_id>57b4d404-01d5-468c-b270-1ee289238604</ui_id>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K8jPaZWPJit9QzCkSWxIA/GyoejGvmmtuXZmO0BX9b/vOk4LGkwDice9xed+nXPto2yZ6X3Xe3dtTpyTS80W324TJnXA6HvLNKyRLRg3Wkgvja4HIGF3oPoQuELeW+k3Rx/1UmpEK/XyCLrOmjt0lCek6xRsbl6ZzldSCYsjjw4sTfNo2WL7R0gK6tam0GbHPONFXhV5mubzWdZURZPlogCEghoqaFBR6ulewNHFgCR/VeY3XcCdD9zG88XY5WoPGisCqyxNGD541AKJTwvKYcLWoAV4YzcHxCKIS60egZXUntqxkPzg5C8amJdlSGyRJHKMwcPxGhqFZ3GVMdSegQei03Pf2zGdr4zk6OKCBLbQK3/6FIsJl12QG0t8aDxWG9Wv9Ze4FXZosL85QnqHtcAuqA30Ry3t1crcf90zPZd62MwYVIaDOpzA0/6a3gc+W4YK19SoXtP901br8AjkUExc1tOlosO0Veaehoa3OQUeiE9puTA9J/xsgG/AyqDiM7Wh4kizASd5PbxjakdrQrZLmNu4UwXOPYqkDdc/+0AxSh7F1XE/oYRb2fkTmnyHo45d8twWTxyx3ZbVhxTydD6ZZbNqMmuqdjLnVTZpCtGU1Xye52U7jY8eVO08eNztvvdpWojRCuK5c96r7dscdgxlW2Zp+bLDZtVLDnvBW2+0Vf4PW4X7fKWr0jT9b6t3sZV0dTTDqG0Y/o6uug0WijMPu+bSEbXhmj7t/0khsKEHJvlT6N7YH0HUI7b7Df2ejWLdBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1eb0ac51938ad210879df0e48aba102c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id>97ed01a3-7b1f-4f4f-b95e-e242c3957804</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:11</sys_created_on>
+        <sys_id>0a087b51935e5650879df0e48aba1057</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <ui_id>18f405c5-46a9-4c9d-a1cb-5c85f309f02b</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4XOTuCPxG166xIUGNCtwFr0shYGLdGJMEXyLDlpFuS/j7KctFgzrAVy3M16pMj3KD54y0zr6tbZe3NlrZxrdvn9KWJSe4y+t0zDEtkl40YL6aTRRQdEbAWq9YFPrZUarT2bGu2AuzOo68as0FKOkLZWsHl4RypfSCUa7PvX0FAXhw273P4RkoIqVTFUyYQnPEvzLI3j9GKUlHlWJqnIACGjggpKVJQ63RM/u+mQ6K+K3Kb2uHWN1PP+fNNXuduDphGeVRJHDJ8daoHEpwJlMWJL0AKcaTYHpEEQt1q9AAupHZVjPvnZyl/UMB2PfWKFJJFjCB6O91AqnIUxhlA1AwdEp+Wubfp0vjCSow0DElhBq9z0NRYSbmsvN1xxvnB/26h2qb+GqbBDgf2rEdJaLATWXq2n32up7hZm/W3P9FrqbjJ9UBkO6nACR/MrW+f5bBkqXFKhYknvT1Mt/BLI7jJxWQ7nig7DSpk1NfU7OaRdIeJDGi4MrwmfdfADNNKr+EJl6HKgWYKVvOj2l8rRmJDtImY3dqrA2heRNOHiZ+spBsm9uCLMx1/hjazdFXVeYa9jF721wysnbLf5KD+vKpgMktEIB6Nkcj644GM+gBTTrMrKLM9hGJYeVGEdONztHts4zkRvBfHWNacq+zGHTWBcjZN4fNxho/yYw45464O2Sv9hK/+e73RVHMf/bXUSW0lbBDP02rrmJ3TVk7dQ6HmYNZeWqHXP9Hn/L/KBDS2Y5K+htWl+eFEv2O43axZG/dUGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">92b0ac51938ad210879df0e48aba1012</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>7f94a397-d264-4e54-a1ef-04eef9d58c82</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:11</sys_created_on>
+        <sys_id>0e087b51935e5650879df0e48aba1052</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <ui_id>97ed01a3-7b1f-4f4f-b95e-e242c3957804</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPxvijCWveSkJh0K2wlr5sxVxLciImW64+kmYm/31Xlp2ENWMN9HFv0blf51zfQzqinG2dNY/qxhixasj8+3NEROMx/N2RBmpO5oSqhgkrVFP0QEQ2IJ0PAKXcmIlVEwYWJsJMNH9xQnOGSUyYVsLu6T25dC0k03xg0ILGOZZrMu/+CAmGraoEqvSapjTPZnmWJNmnq7Sc5WWasRw45NhQQsklpi5G6pO7Hon+qsnuWo8bq0WzGt53Q5eHEVSaeVZpEhH+annDkP28Aml4RGpoUJnSuwOiObD7Rh6BtWgstiM++dWIXzgwm059YsVRIuUheHg+Qin5MuwxhKolLg/pOGqdHtLpWgncbVgQ4xU4aRenWEi4b73cUGJ946FaSVc3X8NWyKHB+NkQcYYXjLderac/aKke1mr7bWR6K5p+M0NQKgry8AKL+yud9Xw6wiWvsVFRQ9viVotWq43oi5FLHa8kPuJKqi0O9VcZA/XEY3828S3iyx5+Ai28ii/YBosDzRKMoEV/wdgO18TJPiJmZxYSjDmKxA0XL85TDJIHcUXYjy+hWrT2Bidv+KBjH701xIkXus640tOOx7suKqULz7oIt7/f/3BJkrOe1ht/XFx/mWeuYVpN02R63jNXs3OeOeOWC42S/cMoXso7fZIkyX+jfIhRhCnCeQ/a+uEf6JNnb4ow87BrKgxS6z/T5/H/xQd2eGCCnkJbpX96UUds/xvkQrTXqQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">60ad9049c34ed210c7113b1f05013150</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:11</sys_created_on>
+        <sys_id>ce087b51935e5650879df0e48aba1041</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <ui_id>7f94a397-d264-4e54-a1ef-04eef9d58c82</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNn2dDDNpzcAhsBCqQ10AS5tIGwIlc2UZpURcqOa/jfuxTlBxr3EcDH3sTZ5e7McgfaMdO4qnH2ydxZKxea3X55iZjUHqPvHdOwQnbLuNFCOml03gIRW4NqfGC+0Sh6xbYHVVWbNVqKCWkrBdvnP6TwpVSixq5fBTVVdViz290vISmoQhlDmdzwhGfpOEvjOJ0Mk2KcFUkqMkDIqKCCAhWlTg9Eew8tEv1WgdtWHreulnrRnR+6Ko8H0NTCs0riiOGrQy2Q+JSgLEZsBVqAM/X2iNQIYq7VCVhK7agc88mvVv6ghulo5BNLJIkcQ/B4fIJC4SyML4TKGTggOg13Td2l86WRHG0YkMASGuWm51hImFdebrjifOHutlHNSn8KU2HHAofXIqSxmAusvFpPv9NSPi7N5vOB6b3U7WS6oDIc1PEEjuZXNM7z2TFUuKJC+Yren6aa+yWQ7WXishosFB0GpTIbaup3cADcEx/QcGFwT/ishZ+hll7FRypDlwPNAqzkebuvVI7GhGwfMbu1UwXWnkTShPPvjacYJHfi8jAff4XXsnJ31HmNnY599Hb9zzZ/txNcJGLCRT8ryqQ/LOKiP+Ec+nFZoEBIx6MxH4SlB5VbBw73+69NHGeis4J465ZrlX2fw25gVI6SeHTZYcPxJYdd8NY7bZX+xVb+Pf/RVXEc/7fVVWwlbR7M0Glrm1/RVS/eQqHncdZcWqLWPtOHw7/HB7a0YJKfQxtTf/OiTtj+Jz1dbkPFBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f063a095938ad210879df0e48aba1075</block>
+        <comment/>
+        <connected_to>97ed01a3-7b1f-4f4f-b95e-e242c3957804</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Service Account Admin - Create Permission if approved">decd5849c34ed210c7113b1f050131df</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>7f94a397-d264-4e54-a1ef-04eef9d58c82</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 12:16:11</sys_created_on>
+        <sys_id>ce087b51935e5650879df0e48aba1060</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:11</sys_updated_on>
+        <ui_id>a016315c-9e12-463d-97e6-78117e9671db</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=decd5849c34ed210c7113b1f050131df"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=decd5849c34ed210c7113b1f050131df"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df^sys_idNOT IN21a3a0c5c38ed210c7113b1f050131ff,29a3a0c5c38ed210c7113b1f050131e7,2da3a0c5c38ed210c7113b1f050131f0,da06e40dc38ed210c7113b1f050131be,dacd9849c34ed210c7113b1f05013129"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>required_for_data_access</element>
+        <help/>
+        <hint/>
+        <label>Required for data access</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:54:05</sys_created_on>
+        <sys_id>21a3a0c5c38ed210c7113b1f050131ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Required for data access</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df_required_for_data_access_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:54:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_name</element>
+        <help/>
+        <hint/>
+        <label>Server Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:54:05</sys_created_on>
+        <sys_id>29a3a0c5c38ed210c7113b1f050131e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Server Name</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df_server_name_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:54:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>permission_text</element>
+        <help/>
+        <hint/>
+        <label>Permission Text</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:54:05</sys_created_on>
+        <sys_id>2da3a0c5c38ed210c7113b1f050131f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Permission Text</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df_permission_text_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:54:05</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>parent_service_account</element>
+        <help/>
+        <hint/>
+        <label>Parent Service Account</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 16:04:31</sys_created_on>
+        <sys_id>da06e40dc38ed210c7113b1f050131be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Parent Service Account</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df_parent_service_account_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 16:04:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>requested_item</element>
+        <help/>
+        <hint/>
+        <label>Requested Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:28:28</sys_created_on>
+        <sys_id>dacd9849c34ed210c7113b1f05013129</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Requested Item</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df_requested_item_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:28:28</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df^sys_idNOT IN61a3e0c5c38ed210c7113b1f0501315c,7da3e0c5c38ed210c7113b1f0501315f,ada3e0c5c38ed210c7113b1f0501315e"/>
+    <sys_choice field="approver_type" table="var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>approver_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>-- None --</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-21 15:54:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>61a3e0c5c38ed210c7113b1f0501315c</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-22 10:23:27</sys_updated_on>
+            <value/>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>approver_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Group</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-21 15:54:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7da3e0c5c38ed210c7113b1f0501315f</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-22 10:23:27</sys_updated_on>
+            <value>Group</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>approver_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>User</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_input_decd5849c34ed210c7113b1f050131df</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-21 15:54:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ada3e0c5c38ed210c7113b1f0501315e</sys_id>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-22 10:23:27</sys_updated_on>
+            <value>User</value>
+        </sys_choice>
+    </sys_choice>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_decd5849c34ed210c7113b1f050131df^sys_idNOT IN56cd9849c34ed210c7113b1f05013142"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>approved</element>
+        <help/>
+        <hint/>
+        <label>Approved</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_decd5849c34ed210c7113b1f050131df</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:28:29</sys_created_on>
+        <sys_id>56cd9849c34ed210c7113b1f05013142</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approved</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_decd5849c34ed210c7113b1f050131df_approved_en</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-21 15:28:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_decd5849c34ed210c7113b1f050131df"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>188c9c85c34ed210c7113b1f05013133</sys_id>
+        <latest_snapshot>decd5849c34ed210c7113b1f050131df</latest_snapshot>
+        <compiler_build>glide-xanadu-07-02-2024__patch3-10-23-2024_11-01-2024_2230.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=188c9c85c34ed210c7113b1f05013133"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=188c9c85c34ed210c7113b1f05013133^sys_idNOT INa2cd9849c34ed210c7113b1f0501318c"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"a2cd9849c34ed210c7113b1f0501318c","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Service Account Admin - Create Permission if approved">188c9c85c34ed210c7113b1f05013133</plan_id>
+        <snapshot>490a7f15935e5650879df0e48aba10c9</snapshot>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-21 15:28:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a2cd9849c34ed210c7113b1f0501318c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 12:16:12</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

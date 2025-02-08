@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Service Account Administration">37442c31c3f55e10c7113b1f050131b7</catalog_item>
+        <catalog_variable>IO:2bd58292c3391210c7113b1f050131f4</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <order>200</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-22 11:38:57</sys_created_on>
+        <sys_id>4ed2749d93cad210879df0e48aba10ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>env</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_4ed2749d93cad210879df0e48aba10ab</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 11:38:57</sys_updated_on>
+        <table/>
+        <ui_policy display_value="RITM - When action is not selected">4ed2f85d93cad210879df0e48aba1085</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>env</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</application>
+        <file_path/>
+        <instance_id>fdb0a0f6db795098e03ad7c8f4961996</instance_id>
+        <instance_name>lloydsoflondonpreprod2</instance_name>
+        <name>catalog_ui_policy_action_4ed2749d93cad210879df0e48aba10ab</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Service Account Administration">37442c31c3f55e10c7113b1f050131b7</catalog_item><catalog_variable>IO:2bd58292c3391210c7113b1f050131f4</catalog_variable><cleared>true</cleared><disabled>ignore</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>false</mandatory><order>200</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>sup_newmanan</sys_created_by><sys_created_on>2024-11-22 11:38:57</sys_created_on><sys_id>4ed2749d93cad210879df0e48aba10ab</sys_id><sys_mod_count>0</sys_mod_count><sys_name>env</sys_name><sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package><sys_policy/><sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope><sys_update_name>catalog_ui_policy_action_4ed2749d93cad210879df0e48aba10ab</sys_update_name><sys_updated_by>sup_newmanan</sys_updated_by><sys_updated_on>2024-11-22 11:38:57</sys_updated_on><table/><ui_policy display_value="RITM - When action is not selected">4ed2f85d93cad210879df0e48aba1085</ui_policy><value/><value_action>ignore</value_action><variable>env</variable><variable_set/><visible>false</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1292814949</payload_hash>
+        <record_name>env</record_name>
+        <reverted_from/>
+        <source>062a3920c3025210c7113b1f0501313c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-22 11:38:57</sys_created_on>
+        <sys_id>0ad2749d93cad210879df0e48aba10b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19353ab07fe0000001</sys_recorded_at>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 11:38:57</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>cad2749df3cad210ef2e42bf7b0edcb5</update_guid>
+        <update_guid_history>cad2749df3cad210ef2e42bf7b0edcb5:1292814949</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">29e2389d93cad210879df0e48aba102b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-22 11:39:12</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>0061a6b76b0641fa80104b3686939484</sys_id>
+        <sys_metadata>4ed2749d93cad210879df0e48aba10ab</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>env</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_scope_delete display_value="">01e4d68068b64402a14019d2b815a801</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_4ed2749d93cad210879df0e48aba10ab</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_4ed2749d93cad210879df0e48aba10ab">0ad2749d93cad210879df0e48aba10b6</sys_update_version>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 11:39:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

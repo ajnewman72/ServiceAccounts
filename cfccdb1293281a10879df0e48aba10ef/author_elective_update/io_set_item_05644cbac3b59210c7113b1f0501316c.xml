@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item">
+    <io_set_item action="DELETE">
+        <order>100</order>
+        <sc_cat_item display_value="Service Account Administration">37442c31c3f55e10c7113b1f050131b7</sc_cat_item>
+        <sys_class_name>io_set_item</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-14 13:51:11</sys_created_on>
+        <sys_id>05644cbac3b59210c7113b1f0501316c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Add Users to Groups.Service Account Administration</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>io_set_item_05644cbac3b59210c7113b1f0501316c</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-14 13:51:11</sys_updated_on>
+        <variable_set display_value="Add Users to Groups">dee2529ac3af0a10c7113b1f050131e4</variable_set>
+    </io_set_item>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</application>
+        <file_path/>
+        <instance_id>fdb0a0f6db795098e03ad7c8f4961996</instance_id>
+        <instance_name>lloydsoflondonpreprod2</instance_name>
+        <name>io_set_item_05644cbac3b59210c7113b1f0501316c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="io_set_item"><io_set_item action="INSERT_OR_UPDATE"><order>100</order><sc_cat_item display_value="Service Account Administration">37442c31c3f55e10c7113b1f050131b7</sc_cat_item><sys_class_name>io_set_item</sys_class_name><sys_created_by>sup_newmanan</sys_created_by><sys_created_on>2024-11-14 13:51:11</sys_created_on><sys_id>05644cbac3b59210c7113b1f0501316c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Add Users to Groups.Service Account Administration</sys_name><sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package><sys_policy/><sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope><sys_update_name>io_set_item_05644cbac3b59210c7113b1f0501316c</sys_update_name><sys_updated_by>sup_newmanan</sys_updated_by><sys_updated_on>2024-11-14 13:51:11</sys_updated_on><variable_set display_value="Add Users to Groups">dee2529ac3af0a10c7113b1f050131e4</variable_set></io_set_item></record_update>]]></payload>
+        <payload_hash>488184743</payload_hash>
+        <record_name>Add Users to Groups.Service Account Administration</record_name>
+        <reverted_from/>
+        <source>029a4ee5c3299e50c7113b1f0501315e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-14 13:51:11</sys_created_on>
+        <sys_id>856480fac3b59210c7113b1f050131f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1932af137a80000001</sys_recorded_at>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-14 13:51:11</sys_updated_on>
+        <type>Catalog Variable Set</type>
+        <update_guid>496480fa03b592106b0fefe20c5ee0f3</update_guid>
+        <update_guid_history>496480fa03b592106b0fefe20c5ee0f3:488184743</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">fbd4c0fac3b59210c7113b1f05013156</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-14 13:53:17</sys_created_on>
+        <sys_db_object display_value="" name="io_set_item">io_set_item</sys_db_object>
+        <sys_id>403b2a1484424caca1fd9f2ee26b8084</sys_id>
+        <sys_metadata>05644cbac3b59210c7113b1f0501316c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Add Users to Groups.Service Account Administration</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_scope_delete display_value="">01e4d68068b64402a14019d2b815a801</sys_scope_delete>
+        <sys_update_name>io_set_item_05644cbac3b59210c7113b1f0501316c</sys_update_name>
+        <sys_update_version display_value="io_set_item_05644cbac3b59210c7113b1f0501316c">856480fac3b59210c7113b1f050131f4</sys_update_version>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-14 13:53:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

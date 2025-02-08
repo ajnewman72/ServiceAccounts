@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>associated_service.business_contact</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-06 10:33:55</sys_created_on>
+        <sys_id>b53a2435c3521a50c7113b1f0501315d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>associated_service.business_contact</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_ui_policy_action_b53a2435c3521a50c7113b1f0501315d</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-06 10:33:55</sys_updated_on>
+        <table>x_llol_service_acc_records</table>
+        <ui_policy display_value="Keep Owner fields read only">9f8893c4c3395610c7113b1f050131f9</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

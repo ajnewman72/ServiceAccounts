@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System Import Sets" source="com.glide.system_import_set">4ad460b61b311010ff3cf7c4464bcb60</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-06 09:14:14</sys_created_on>
+        <sys_id>aaf7183d875a9610944a65fe8bbb3576</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-06 09:14:14</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

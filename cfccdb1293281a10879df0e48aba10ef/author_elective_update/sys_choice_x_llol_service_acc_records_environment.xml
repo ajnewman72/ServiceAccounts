@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="environment" table="x_llol_service_acc_records" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>environment</element>
+            <name>x_llol_service_acc_records</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-06 09:30:48</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>environment</sys_name>
+            <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+            <sys_update_name>sys_choice_x_llol_service_acc_records_environment</sys_update_name>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-06 09:30:48</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Development</label>
+            <language>en</language>
+            <name>x_llol_service_acc_records</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-06 09:30:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-26 10:29:41</sys_updated_on>
+            <value>Development</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Disaster Recovery</label>
+            <language>en</language>
+            <name>x_llol_service_acc_records</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-26 10:28:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-26 10:29:44</sys_updated_on>
+            <value>Disaster Recovery</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>INT</label>
+            <language>en</language>
+            <name>x_llol_service_acc_records</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-26 10:28:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-26 10:29:49</sys_updated_on>
+            <value>INT</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>LIM</label>
+            <language>en</language>
+            <name>x_llol_service_acc_records</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-26 10:28:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-26 10:29:55</sys_updated_on>
+            <value>LIM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pre-Production</label>
+            <language>en</language>
+            <name>x_llol_service_acc_records</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-26 10:29:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-26 10:30:15</sys_updated_on>
+            <value>Pre-Production</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Production</label>
+            <language>en</language>
+            <name>x_llol_service_acc_records</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-06 09:30:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-26 10:30:04</sys_updated_on>
+            <value>Production</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SYSTEST</label>
+            <language>en</language>
+            <name>x_llol_service_acc_records</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-26 10:29:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-26 10:29:59</sys_updated_on>
+            <value>SYSTEST</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Test</label>
+            <language>en</language>
+            <name>x_llol_service_acc_records</name>
+            <sequence>7</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-26 10:29:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-26 10:30:12</sys_updated_on>
+            <value>Test</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>environment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UAT</label>
+            <language>en</language>
+            <name>x_llol_service_acc_records</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-06 09:31:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-26 10:30:08</sys_updated_on>
+            <value>UAT</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

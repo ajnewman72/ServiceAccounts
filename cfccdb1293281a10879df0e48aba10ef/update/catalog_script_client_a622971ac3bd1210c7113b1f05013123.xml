@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Service Account Administration">37442c31c3f55e10c7113b1f050131b7</cat_item>
+        <cat_variable>IO:e5af8e9ec3391210c7113b1f050131de</cat_variable>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Get Service Account - Account Type value</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    //if (isLoading || newValue == '') {
+    if (isLoading) {
+        return;
+    }
+    var currentAction = g_form.getValue('action');
+    if (currentAction == 'create_perm') {
+        if (newValue == '') {
+            // Set the field to be hidden
+            g_form.setMandatory('server', false);
+            g_form.setDisplay('server', false);
+
+        }
+        var sysID_ServiceAccount = g_form.getValue('svc_account');
+        //alert('sysID_ServiceAccount: ' + sysID_ServiceAccount);
+        var ga = new GlideAjax('LLoyServiceAccountUtils');
+        ga.addParam('sysparm_name', 'checkAccountType');
+        ga.addParam('sysparm_sys_id', sysID_ServiceAccount);
+        ga.getXMLAnswer(function(response) {
+            var answer = response;
+            //alert('Account Type: ' + answer);
+            if (answer == 'Windows') {
+                g_form.setDisplay('server', true);
+                g_form.setMandatory('server', true);
+            } else {
+                // Set the field to be hidden
+                g_form.setMandatory('server', false);
+                g_form.setDisplay('server', false);
+            }
+        });
+    }
+
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-13 15:33:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a622971ac3bd1210c7113b1f05013123</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Get Service Account - Account Type value</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>catalog_script_client_a622971ac3bd1210c7113b1f05013123</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-14 14:09:26</sys_updated_on>
+        <table/>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+</record_update>

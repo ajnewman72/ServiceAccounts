@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="group_memberships" label="Group Membership(s)" language="en" table="x_llol_service_acc_records">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>group_memberships</element>
+            <help/>
+            <hint/>
+            <label>Group Membership(s)</label>
+            <language>en</language>
+            <name>x_llol_service_acc_records</name>
+            <plural>Group Membership(s)</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-06 09:32:25</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Group Membership(s)</sys_name>
+            <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+            <sys_update_name>sys_documentation_x_llol_service_acc_records_group_memberships_en</sys_update_name>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-06 09:32:25</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

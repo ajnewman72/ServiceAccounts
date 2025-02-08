@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>false</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>lloy_serviceaccount_tmap</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_llol_service_acc_lloy_serviceaccount_impset</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-26 11:58:36</sys_created_on>
+        <sys_id>459d5daa930e5610879df0e48aba10b7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>lloy_serviceaccount_tmap</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_transform_map_459d5daa930e5610879df0e48aba10b7</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-10 10:06:26</sys_updated_on>
+        <target_table>x_llol_service_acc_records</target_table>
+    </sys_transform_map>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Service Account Administration">37442c31c3f55e10c7113b1f050131b7</catalog_item>
+        <catalog_variable>IO:b0a4909793029a10879df0e48aba1028</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <order>200</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-28 14:44:49</sys_created_on>
+        <sys_id>cfe6d49b93029a10879df0e48aba1073</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>setup_permissions_now</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_cfe6d49b93029a10879df0e48aba1073</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-02 08:39:10</sys_updated_on>
+        <table/>
+        <ui_policy display_value="RITM  - When action is create new permission">4782b85d93cad210879df0e48aba104d</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>setup_permissions_now</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</application>
+        <file_path/>
+        <instance_id>fdb0a0f6db795098e03ad7c8f4961996</instance_id>
+        <instance_name>lloydsoflondonpreprod2</instance_name>
+        <name>catalog_ui_policy_action_cfe6d49b93029a10879df0e48aba1073</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Service Account Administration">37442c31c3f55e10c7113b1f050131b7</catalog_item><catalog_variable>IO:b0a4909793029a10879df0e48aba1028</catalog_variable><cleared>false</cleared><disabled>true</disabled><field/><field_message/><field_message_type>none</field_message_type><mandatory>false</mandatory><order>200</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>sup_newmanan</sys_created_by><sys_created_on>2024-11-28 14:44:49</sys_created_on><sys_id>cfe6d49b93029a10879df0e48aba1073</sys_id><sys_mod_count>2</sys_mod_count><sys_name>setup_permissions_now</sys_name><sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package><sys_policy/><sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope><sys_update_name>catalog_ui_policy_action_cfe6d49b93029a10879df0e48aba1073</sys_update_name><sys_updated_by>sup_newmanan</sys_updated_by><sys_updated_on>2024-12-02 08:39:10</sys_updated_on><table/><ui_policy display_value="RITM  - When action is create new permission">4782b85d93cad210879df0e48aba104d</ui_policy><value/><value_action>ignore</value_action><variable>setup_permissions_now</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-1716316544</payload_hash>
+        <record_name>setup_permissions_now</record_name>
+        <reverted_from/>
+        <source>062a3920c3025210c7113b1f0501313c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-02 08:39:10</sys_created_on>
+        <sys_id>f9992f1cc3565250c7113b1f05013114</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193868606350000001</sys_recorded_at>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-02 08:39:10</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>31992f1cee565250ee8844ba6e2b2c14</update_guid>
+        <update_guid_history>31992f1cee565250ee8844ba6e2b2c14:-1716316544,0999eb1cd3565250bd4070dce7a77bb6:-2023282625,83e65c9b9e029a10c348b829ee07aedb:1363377339</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">73888069939e5650879df0e48aba108f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-05 13:28:23</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>47b240656e2d42d18f8adceb77bbeff9</sys_id>
+        <sys_metadata>cfe6d49b93029a10879df0e48aba1073</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>setup_permissions_now</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_scope_delete display_value="">01e4d68068b64402a14019d2b815a801</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_cfe6d49b93029a10879df0e48aba1073</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_cfe6d49b93029a10879df0e48aba1073">f9992f1cc3565250c7113b1f05013114</sys_update_version>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-05 13:28:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

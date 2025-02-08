@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role/>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-09-12 13:02:19</sys_created_on>
+        <sys_id>f20d539293281a10879df0e48aba102e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7e0d539293281a10879df0e48aba1026</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_embedded_help_role_f20d539293281a10879df0e48aba102e</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-09-12 13:02:19</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

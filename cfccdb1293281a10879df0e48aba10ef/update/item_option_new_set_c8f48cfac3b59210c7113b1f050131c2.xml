@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="item_option_new_set">
+    <item_option_new_set action="INSERT_OR_UPDATE">
+        <create_roles/>
+        <description>Used to collect data for permission records, to be associated to a Service Account</description>
+        <display_title>false</display_title>
+        <internal_name>service_account_permissions</internal_name>
+        <layout>normal</layout>
+        <name/>
+        <order>100</order>
+        <read_roles/>
+        <set_attributes/>
+        <sys_class_name>item_option_new_set</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-14 13:54:14</sys_created_on>
+        <sys_id>c8f48cfac3b59210c7113b1f050131c2</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Service Account Permissions</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>item_option_new_set_c8f48cfac3b59210c7113b1f050131c2</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2024-11-21 11:33:44</sys_updated_on>
+        <title>Service Account Permissions</title>
+        <type>one_to_many</type>
+        <version>15</version>
+        <write_roles/>
+    </item_option_new_set>
+</record_update>

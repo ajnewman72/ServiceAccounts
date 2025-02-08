@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d840360cc3355610c7113b1f050131df" label="Lloyd's Service Account Permissions" max_length="40" name="x_llol_service_acc_permissions" type="collection">
+        <element choice="1" label="Server Name" max_length="32" name="server_name" reference="cmdb_ci_win_server" reference_qual="operational_status=1^EQ" reference_qual_condition="operational_status=1^EQ" type="reference">
+            <choice/>
+        </element>
+        <element choice="1" label="Parent Service Account" max_length="40" name="parent_service_account" reference="x_llol_service_acc_records" reference_qual="account_enabled=true^EQ" reference_qual_condition="account_enabled=true^EQ" type="reference">
+            <choice/>
+        </element>
+        <element label="Access to data is required" max_length="40" name="data_access" type="boolean"/>
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="Permissions" max_length="1000" name="permissions" type="string"/>
+        <index name="index">
+            <element name="parent_service_account"/>
+        </index>
+        <index name="index2">
+            <element name="server_name"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Service Account Administration">37442c31c3f55e10c7113b1f050131b7</catalog_item>
+        <catalog_variable>IO:5c3520b1c3f55e10c7113b1f0501315b</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-22 11:39:56</sys_created_on>
+        <sys_id>2413bc9d93cad210879df0e48aba10ab</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>svc_acc_name</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_2413bc9d93cad210879df0e48aba10ab</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 11:55:58</sys_updated_on>
+        <table/>
+        <ui_policy display_value="RITM - When action is create new account">5013b09d93cad210879df0e48aba1083</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>svc_acc_name</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

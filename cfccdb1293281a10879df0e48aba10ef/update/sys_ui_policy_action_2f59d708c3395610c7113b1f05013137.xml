@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>parent_service_account.account_type</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-06 16:18:34</sys_created_on>
+        <sys_id>2f59d708c3395610c7113b1f05013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>parent_service_account.account_type</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_ui_policy_action_2f59d708c3395610c7113b1f05013137</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-06 16:18:34</sys_updated_on>
+        <table>x_llol_service_acc_permissions</table>
+        <ui_policy display_value="Keep Account Type Read only">a7495708c3395610c7113b1f05013100</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

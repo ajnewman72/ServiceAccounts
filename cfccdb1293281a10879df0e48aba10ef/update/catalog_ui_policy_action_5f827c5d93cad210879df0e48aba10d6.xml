@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Service Account Administration">37442c31c3f55e10c7113b1f050131b7</catalog_item>
+        <catalog_variable>IO:5080d612c3791210c7113b1f050131a4</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-22 11:37:40</sys_created_on>
+        <sys_id>5f827c5d93cad210879df0e48aba10d6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>permissions</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_5f827c5d93cad210879df0e48aba10d6</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-22 11:48:38</sys_updated_on>
+        <table/>
+        <ui_policy display_value="RITM  - When action is create new permission">4782b85d93cad210879df0e48aba104d</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>permissions</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

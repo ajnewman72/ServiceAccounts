@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Select an authentication type">af938e9ec3f51210c7113b1f050131d3</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-13 09:54:13</sys_created_on>
+        <sys_id>78844212c3391210c7113b1f0501316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Local</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>question_choice_78844212c3391210c7113b1f0501316f</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-13 09:54:13</sys_updated_on>
+        <text>Local</text>
+        <value>Local</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=78844212c3391210c7113b1f0501316f"/>
+</record_update>

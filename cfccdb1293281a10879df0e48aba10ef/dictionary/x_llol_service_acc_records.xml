@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0fef179693281a10879df0e48aba10f8" label="Lloyd's Service Accounts" max_length="40" name="x_llol_service_acc_records" type="collection">
+        <element default="true" label="Account Enabled" max_length="40" name="account_enabled" type="boolean"/>
+        <element choice="1" label="Account type" max_length="40" name="account_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="SQL" value="SQL"/>
+                <element inactive_on_update="false" label="Cloud" value="Cloud"/>
+                <element inactive_on_update="false" label="Windows" value="Windows"/>
+            </choice>
+        </element>
+        <element display="true" label="Service Account Name" mandatory="true" max_length="50" name="account_name" type="string"/>
+        <element label="Interactive Login Required" max_length="40" name="int_login_required" type="boolean"/>
+        <element label="Group Membership(s)" max_length="1000" name="group_memberships" type="string"/>
+        <element label="Local Admin Required" max_length="40" name="local_admin_req" type="boolean"/>
+        <element label="Last review date" max_length="40" name="last_review_date" type="glide_date"/>
+        <element label="Service Account Description" max_length="1000" name="service_account_description" type="string"/>
+        <element choice="1" label="Authentication type" max_length="40" name="authentication_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Domain" value="Domain"/>
+                <element inactive_on_update="false" label="Local" value="Local"/>
+            </choice>
+        </element>
+        <element choice="1" label="Service Type" max_length="40" name="service_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Configuration files" value="Configuration files"/>
+                <element inactive_on_update="false" label="Windows IIS Directory Security (Anonymous Access)" value="Windows IIS Directory Security"/>
+                <element inactive_on_update="false" label="Windows Scheduled Tasks" value="Windows Scheduled Tasks"/>
+                <element inactive_on_update="false" label="COM+ Applications" value="COMPlus Applications"/>
+                <element inactive_on_update="false" label="Windows IIS Application Pools" value="Windows IIS Application Pools"/>
+                <element inactive_on_update="false" label="Accounts stored in databases" value="Accounts stored in databases"/>
+                <element inactive_on_update="false" label="Windows Services" value="Windows Services"/>
+                <element inactive_on_update="false" label="Windows Registry" value="Windows Registry"/>
+            </choice>
+        </element>
+        <element choice="1" label="Service" max_length="32" name="associated_service" reference="cmdb_ci_service" reference_qual="operational_status=1^EQ" reference_qual_condition="operational_status=1^EQ" type="reference">
+            <choice/>
+        </element>
+        <element choice="1" label="Environment" max_length="40" name="environment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Pre-Production" sequence="4" value="Pre-Production"/>
+                <element inactive_on_update="false" label="Test" sequence="7" value="Test"/>
+                <element inactive_on_update="false" label="INT" sequence="2" value="INT"/>
+                <element inactive_on_update="false" label="UAT" sequence="8" value="UAT"/>
+                <element inactive_on_update="false" label="Disaster Recovery" sequence="1" value="Disaster Recovery"/>
+                <element inactive_on_update="false" label="Production" sequence="5" value="Production"/>
+                <element inactive_on_update="false" label="Development" sequence="0" value="Development"/>
+                <element inactive_on_update="false" label="SYSTEST" sequence="6" value="SYSTEST"/>
+                <element inactive_on_update="false" label="LIM" sequence="3" value="LIM"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="account_name"/>
+        </index>
+        <index name="index2">
+            <element name="associated_service"/>
+        </index>
+    </element>
+</database>

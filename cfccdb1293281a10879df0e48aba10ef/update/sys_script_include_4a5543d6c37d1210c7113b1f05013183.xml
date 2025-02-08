@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_llol_service_acc.LLoyServiceAccountUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>LLoyServiceAccountUtils</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var LLoyServiceAccountUtils = Class.create();
+LLoyServiceAccountUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    checkAccountType: function() {
+        var referenceId = this.getParameter('sysparm_sys_id');
+        var accType = '';
+        var svcAccRecord = new GlideRecord('x_llol_service_acc_records');
+        if (svcAccRecord.get(referenceId)) {
+            accType = svcAccRecord.account_type;
+        }
+        return accType;
+    },
+    checkServiceAccountName: function() {
+        var serviceAccName = this.getParameter('sysparm_account_name');
+        var result = {
+            exists: false,
+        };
+
+        var serviceAccGR = new GlideRecord('x_llol_service_acc_records');
+        serviceAccGR.addQuery('account_name', serviceAccName);
+        serviceAccGR.query();
+        if (serviceAccGR.next()) {
+            result.exists = true;
+        }
+
+        return JSON.stringify(result);
+    },
+    type: 'LLoyServiceAccountUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-13 14:37:39</sys_created_on>
+        <sys_id>4a5543d6c37d1210c7113b1f05013183</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>LLoyServiceAccountUtils</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_script_include_4a5543d6c37d1210c7113b1f05013183</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-03 09:15:22</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4a5543d6c37d1210c7113b1f05013183</id>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-12-03 08:56:50</sys_created_on>
+        <sys_id>1e3738f093929250879df0e48aba107a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-12-03 08:56:50</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

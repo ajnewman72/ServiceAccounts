@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Select an Account Type">afc6acb1c3f55e10c7113b1f05013115</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-11 13:50:00</sys_created_on>
+        <sys_id>e3476435c3f55e10c7113b1f05013184</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cloud</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>question_choice_e3476435c3f55e10c7113b1f05013184</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-11 13:50:00</sys_updated_on>
+        <text>Cloud</text>
+        <value>Cloud</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=e3476435c3f55e10c7113b1f05013184"/>
+</record_update>

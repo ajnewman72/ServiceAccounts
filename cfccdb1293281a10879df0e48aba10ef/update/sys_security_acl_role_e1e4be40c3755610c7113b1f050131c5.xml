@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-06 13:39:05</sys_created_on>
+        <sys_id>e1e4be40c3755610c7113b1f050131c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_llol_service_acc_permissions.x_llol_service_acc.service_account_permission_records_user</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_security_acl display_value="x_llol_service_acc_permissions">6de4be40c3755610c7113b1f050131bc</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_e1e4be40c3755610c7113b1f050131c5</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-06 13:39:05</sys_updated_on>
+        <sys_user_role display_value="x_llol_service_acc.service_account_permission_records_user" name="x_llol_service_acc.service_account_permission_records_user">85e43a0cc3355610c7113b1f05013126</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

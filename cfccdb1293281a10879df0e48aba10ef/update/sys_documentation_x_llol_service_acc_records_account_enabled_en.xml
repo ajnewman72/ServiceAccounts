@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="account_enabled" label="Account Enabled" language="en" table="x_llol_service_acc_records">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>account_enabled</element>
+            <help/>
+            <hint/>
+            <label>Account Enabled</label>
+            <language>en</language>
+            <name>x_llol_service_acc_records</name>
+            <plural>Account Enabled</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-06 09:14:57</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Account Enabled</sys_name>
+            <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+            <sys_update_name>sys_documentation_x_llol_service_acc_records_account_enabled_en</sys_update_name>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-06 09:14:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

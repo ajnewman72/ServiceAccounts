@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="DELETE">
+        <choice_action>create</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="lloyd_serviceaccount_tmap">12a951e2930e5610879df0e48aba107f</map>
+        <reference_value_field/>
+        <source_field>u_account_type</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return ""; // return the value to be put into the target field
+
+})(source);]]></source_script>
+        <source_table>x_llol_service_acc_lloy_serviceaccount_impset</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-26 11:42:38</sys_created_on>
+        <sys_id>cf0a59e2930e5610879df0e48aba1002</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_account_type</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>sys_transform_entry_cf0a59e2930e5610879df0e48aba1002</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:42:38</sys_updated_on>
+        <target_field>account_type</target_field>
+        <target_table>x_llol_service_acc_records</target_table>
+        <use_source_script>false</use_source_script>
+    </sys_transform_entry>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</application>
+        <file_path/>
+        <instance_id>fdb0a0f6db795098e03ad7c8f4961996</instance_id>
+        <instance_name>lloydsoflondonpreprod2</instance_name>
+        <name>sys_transform_entry_cf0a59e2930e5610879df0e48aba1002</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_entry"&gt;&lt;sys_transform_entry action="INSERT_OR_UPDATE"&gt;&lt;choice_action&gt;create&lt;/choice_action&gt;&lt;coalesce&gt;false&lt;/coalesce&gt;&lt;coalesce_case_sensitive&gt;false&lt;/coalesce_case_sensitive&gt;&lt;coalesce_empty_fields&gt;false&lt;/coalesce_empty_fields&gt;&lt;date_format&gt;yyyy-MM-dd HH:mm:ss&lt;/date_format&gt;&lt;map display_value="lloyd_serviceaccount_tmap"&gt;12a951e2930e5610879df0e48aba107f&lt;/map&gt;&lt;reference_value_field/&gt;&lt;source_field&gt;u_account_type&lt;/source_field&gt;&lt;source_script&gt;&lt;![CDATA[answer = (function transformEntry(source) {
+
+	// Add your code here
+	return ""; // return the value to be put into the target field
+
+})(source);]]&gt;&lt;/source_script&gt;&lt;source_table&gt;x_llol_service_acc_lloy_serviceaccount_impset&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_entry&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sup_newmanan&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-11-26 11:42:38&lt;/sys_created_on&gt;&lt;sys_id&gt;cf0a59e2930e5610879df0e48aba1002&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;u_account_type&lt;/sys_name&gt;&lt;sys_package display_value="Service Accounts" source="x_llol_service_acc"&gt;cfccdb1293281a10879df0e48aba10ef&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Service Accounts"&gt;cfccdb1293281a10879df0e48aba10ef&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_entry_cf0a59e2930e5610879df0e48aba1002&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sup_newmanan&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-11-26 11:42:38&lt;/sys_updated_on&gt;&lt;target_field&gt;account_type&lt;/target_field&gt;&lt;target_table&gt;x_llol_service_acc_records&lt;/target_table&gt;&lt;use_source_script&gt;false&lt;/use_source_script&gt;&lt;/sys_transform_entry&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2136669872</payload_hash>
+        <record_name>u_account_type</record_name>
+        <reverted_from/>
+        <source>062a3920c3025210c7113b1f0501313c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-26 11:42:38</sys_created_on>
+        <sys_id>070a59e2930e5610879df0e48aba1007</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1936847d77d0000001</sys_recorded_at>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:42:38</sys_updated_on>
+        <type>Field Map</type>
+        <update_guid>c70a59e22e0e56109fc17741b1cbd806</update_guid>
+        <update_guid_history>c70a59e22e0e56109fc17741b1cbd806:2136669872</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-26 11:57:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_entry">sys_transform_entry</sys_db_object>
+        <sys_id>2c820cfbff484d48958f790e370cea90</sys_id>
+        <sys_metadata>cf0a59e2930e5610879df0e48aba1002</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_account_type</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_scope_delete display_value="">01e4d68068b64402a14019d2b815a801</sys_scope_delete>
+        <sys_update_name>sys_transform_entry_cf0a59e2930e5610879df0e48aba1002</sys_update_name>
+        <sys_update_version display_value="sys_transform_entry_cf0a59e2930e5610879df0e48aba1002">070a59e2930e5610879df0e48aba1007</sys_update_version>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-26 11:57:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

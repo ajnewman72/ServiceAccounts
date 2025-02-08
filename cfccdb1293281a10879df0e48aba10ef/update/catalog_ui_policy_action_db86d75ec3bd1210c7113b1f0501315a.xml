@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="Service Account Administration">37442c31c3f55e10c7113b1f050131b7</catalog_item>
+        <catalog_variable>IO:86a4c212c3391210c7113b1f05013120</catalog_variable>
+        <cleared>true</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>false</mandatory>
+        <order>200</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>sup_newmanan</sys_created_by>
+        <sys_created_on>2024-11-13 15:52:26</sys_created_on>
+        <sys_id>db86d75ec3bd1210c7113b1f0501315a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>grp_memberships</sys_name>
+        <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_db86d75ec3bd1210c7113b1f0501315a</sys_update_name>
+        <sys_updated_by>sup_newmanan</sys_updated_by>
+        <sys_updated_on>2024-11-14 08:39:44</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Cat Item - When action is create new permission">31f86692c3f91210c7113b1f0501311d</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <variable>grp_memberships</variable>
+        <variable_set/>
+        <visible>false</visible>
+    </catalog_ui_policy_action>
+</record_update>

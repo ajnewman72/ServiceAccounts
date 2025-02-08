@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_related sys_domain="global" table="x_llol_service_acc_records" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Lloyd's Service Accounts - Default view" name="x_llol_service_acc_records" related_list="NULL" sys_domain="global" view="Default view">1e849740c3395610c7113b1f0501319a</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_llol_service_acc_permissions.parent_service_account</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-06 15:57:18</sys_created_on>
+            <sys_id>1e849740c3395610c7113b1f0501319c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-06 15:57:18</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Lloyd's Service Accounts - Default view</calculated_name>
+            <filter/>
+            <name>x_llol_service_acc_records</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>sup_newmanan</sys_created_by>
+            <sys_created_on>2024-11-06 15:57:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1e849740c3395610c7113b1f0501319a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Service Accounts - Default view</sys_name>
+            <sys_package display_value="Service Accounts" source="x_llol_service_acc">cfccdb1293281a10879df0e48aba10ef</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Service Accounts">cfccdb1293281a10879df0e48aba10ef</sys_scope>
+            <sys_update_name>sys_ui_related_x_llol_service_acc_records_null</sys_update_name>
+            <sys_updated_by>sup_newmanan</sys_updated_by>
+            <sys_updated_on>2024-11-06 15:57:18</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>
